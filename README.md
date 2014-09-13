@@ -50,6 +50,13 @@ Short but sweet.
 3. Merge all scripts, uglify, rename ready.min.js.
 4. Watch all files in /scripts and /style.
 
+###### Notifications:
+
+Uses Mac OSX native notifications, with Growl fallbacks.
+
+* On /style change: SASS compiled, CSS minified.
+* On /scripts change: JS uglified.
+
 # Looking Ahead
 
 - [x] Improve documentation
