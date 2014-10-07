@@ -41,6 +41,10 @@ Short but sweet.
 * jQuery 2.x branch is loaded via CDN.
 * $(document).ready() provided.
 
+###### Notes
+
+* Use bookmarklet.js for debugging layouts.  See [here](https://gist.github.com/addyosmani/fd3999ea7fce242756b1).
+
 ### Gulp
 
 ###### Default Task:
