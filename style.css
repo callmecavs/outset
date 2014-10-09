@@ -1,54 +1,21 @@
-/*
-Error: Invalid CSS after "  font-family: ": expected expression (e.g. 1px, bold), was ";"
-        on line 25 of style/style.scss
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
 
-20: }
-21: 
-22: // globals
-23: 
-24: body {
-25:   font-family: ;
-26:   font-weight: ;
-27:   font-size: ;
-28:   line-height: 120%;
-29: }
-30: 
+body {
+  line-height: 1.3; }
 
-Backtrace:
-style/style.scss:25
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:1163:in `expected'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/script/lexer.rb:220:in `expected!'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/script/parser.rb:572:in `assert_expr'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/script/parser.rb:62:in `parse'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:1025:in `sass_script'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:878:in `value!'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:753:in `block in try_declaration'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:1139:in `call'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:1139:in `rethrow'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:766:in `try_declaration'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:696:in `declaration_or_ruleset'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:661:in `block_child'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:650:in `block_contents'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:642:in `block'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:635:in `ruleset'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:660:in `block_child'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:653:in `block_contents'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/scss/parser.rb:42:in `parse'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/engine.rb:393:in `_to_tree'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/exec/sass_scss.rb:375:in `run'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/exec/base.rb:40:in `parse'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/lib/sass/exec/base.rb:19:in `parse!'
-/Users/Cavs/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.2/bin/sass:13:in `<top (required)>'
-/Users/Cavs/.rvm/gems/ruby-2.1.0/bin/sass:23:in `load'
-/Users/Cavs/.rvm/gems/ruby-2.1.0/bin/sass:23:in `<main>'
-/Users/Cavs/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
-/Users/Cavs/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  font-family: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 25 of style/style.scss\A \A 20: }\A 21: \A 22: // globals\A 23: \A 24: body {\A 25:   font-family: ;\A 26:   font-weight: ;\A 27:   font-size: ;\A 28:   line-height: 120%;\A 29: }\A 30: "; }
+a {
+  text-decoration: none; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+/*# sourceMappingURL=style.css.map */

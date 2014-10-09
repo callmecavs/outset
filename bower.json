@@ -1,0 +1,7 @@
+{
+	"name": "",
+	"dependencies": {
+		"normalize-css": "latest",
+		"bourbon": "latest"
+	}
+}
