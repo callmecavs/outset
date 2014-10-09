@@ -2,6 +2,8 @@
 
 Front-end template, configured for HTML5, SASS (.scss syntax), and JS - managed with Bower, built with Gulp.
 
+[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
+
 ## Usage
 
 1. `git clone` this repo when beginning a new project.
@@ -81,5 +83,3 @@ Uses Mac OSX native notifications, with Growl fallbacks.
 
 - [x] Add package/dependency management
 - [ ] Add Bower section to README.md
-
-[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
