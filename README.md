@@ -81,3 +81,5 @@ Uses Mac OSX native notifications, with Growl fallbacks.
 
 - [x] Add package/dependency management
 - [ ] Add Bower section to README.md
+
+[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
