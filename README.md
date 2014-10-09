@@ -81,3 +81,4 @@ Uses Mac OSX native notifications, with Growl fallbacks.
 
 - [x] Add package/dependency management
 - [ ] Add Bower section to README.md
+- [ ] Make the `.gulpfile` suck less
