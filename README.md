@@ -1,6 +1,6 @@
 # start
 
-Front-end template, configured for HTML5, SASS (.scss syntax), and JS - built with Gulp.
+Front-end template, configured for HTML5, SASS (.scss syntax), and JS - managed with Bower, built with Gulp.
 
 ## Usage
 
@@ -79,5 +79,5 @@ Uses Mac OSX native notifications, with Growl fallbacks.
 
 # Looking Ahead
 
-- [x] Improve documentation
-- [ ] Improve commenting
+- [x] Add package/dependency management
+- [ ] Add Bower section to README.md
