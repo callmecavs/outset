@@ -2,6 +2,22 @@
 
 Front-end template, configured for HTML5, SASS (.scss syntax), and JS - built with Gulp.
 
+## Usage
+
+1. `git clone` this repo when beginning a new project.
+2. Fill in `"name"` in both `package.json` and `bower.json`.
+3. In your shell, run the following:
+
+```bash
+$ (sudo) npm install
+$ (sudo) bower install
+$ (sudo) gulp
+```
+
+4. Read the rest of these docs!
+
+> The `index.html` file has the dependencies linked up, and the `.gulpfile` will run and watch for file changes, but the notes below outline things in the HTML/CSS that need to be filled in before deploying.
+
 ### General
 
 * Tabs replaced with 2 spaces.
