@@ -1,6 +1,6 @@
 # start
 
-Front-end template, configured for HTML5, SASS (.scss syntax), and JS - managed with Bower, built with Gulp.
+Front-end template, configured for HTML5, SASS (.scss), and JS - managed with Bower, built with Gulp.
 
 [![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
 
