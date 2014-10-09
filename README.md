@@ -16,9 +16,7 @@ $ (sudo) bower install
 $ (sudo) gulp
 ```
 
-4. Read the rest of these docs!
-
-> The `index.html` file has the dependencies linked up, and the `.gulpfile` will run and watch for file changes, but the notes below outline things in the HTML/CSS that need to be filled in before deploying.
+Read the rest of these docs! The `index.html` file has the dependencies linked up, and the `.gulpfile` will run without errors, but the notes below outline things in the HTML/CSS that need to be filled in before deploying.
 
 ### General
 
