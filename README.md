@@ -26,7 +26,7 @@ Short but sweet.
 ### SCSS
 
 * Load [Normalize.css](https://github.com/necolas/normalize.css/).
-* Load [Bourbon.io](http://bourbon.io/) mixin library.  Documentation found [here](http://bourbon.io/docs/).
+* Load [Bourbon.io](http://bourbon.io/) mixin library. Documentation found [here](http://bourbon.io/docs/).
 * Set `*, *:before, *:after` box model to `border-box`, and `margin` to `0`.
 * Remove `text-decoration` on links.
 * Set `<strong>` `font-weight` to `bold`.
@@ -43,7 +43,7 @@ Short but sweet.
 
 ###### Notes
 
-* Use [bookmarklet.js](https://github.com/callmecavs/start/blob/master/scripts/bookmarklet.js) for debugging layouts.  See [here](https://gist.github.com/addyosmani/fd3999ea7fce242756b1).
+* Use [bookmarklet.js](https://github.com/callmecavs/start/blob/master/scripts/bookmarklet.js) for debugging layouts. See [here](https://gist.github.com/addyosmani/fd3999ea7fce242756b1).
 
 ### Gulp
 
