@@ -1,9 +1,13 @@
+// init gulp
 var gulp   = require("gulp");
+
+// init plugins
+var plumber = require('gulp-plumber');
 var shell  = require('gulp-shell');
-var min    = require('gulp-minify-css');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var notify = require('gulp-notify');
+var concat  = require('gulp-concat');
+var uglify  = require('gulp-uglify');
+var rename  = require('gulp-rename');
+var notify  = require('gulp-notify');
 
 // compile sass, remove source map
 gulp.task('sass', shell.task([
