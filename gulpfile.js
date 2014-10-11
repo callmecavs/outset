@@ -9,21 +9,20 @@ var uglify  = require('gulp-uglify');
 var rename  = require('gulp-rename');
 var notify  = require('gulp-notify');
 
-// compile sass, remove source map
-gulp.task('sass', shell.task([
-  'sass style/style.scss style.css --sourcemap=none'
-]));
 // error handler
 var onError = function(error) {
   console.log(error);
 }
 
-// minify css
-gulp.task('css', function() {
-  gulp.src('./style.css')
-    .pipe(min())
-    .pipe(gulp.dest('./'))
-    .pipe(notify('SASS compiled, CSS minified'));
+// compile sass, without source map
+// shell used to be compatible with bourbon
+gulp.task('sass', function() {
+  return gulp.src('style/*.scss')
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(shell(['sass style/style.scss style.css --sourcemap=none']))
+    .pipe(notify('SASS compiled, CSS minified.'));
 });
 
 // uglify, rename js
