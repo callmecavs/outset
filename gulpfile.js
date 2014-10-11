@@ -38,11 +38,11 @@ gulp.task('scripts', function() {
     .pipe(notify('JS concatenated and uglified.'));
 });
 
-// watch
+// watch style and scripts
 gulp.task('watch', function() {
   gulp.watch('style/*.scss', ['sass']);
   gulp.watch('scripts/*.js', ['scripts']);
 });
 
-// build task
+// default task
 gulp.task('default', ['sass', 'scripts', 'watch']);
