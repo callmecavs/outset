@@ -51,6 +51,7 @@ Short but sweet.
 ###### Notes
 
 * Remember to set `font` properties in `body` selector.
+* SASS is compiled _without_ generating a source map.
 
 ### JS
 
