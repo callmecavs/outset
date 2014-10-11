@@ -64,22 +64,19 @@ Short but sweet.
 
 ### Gulp
 
-###### Default Task:
+1. Compile SCSS, without source map.
+2. Contenate and uglify scripts.
+3. Watch style and scripts.
+4. Notify when task complete.
 
-1. Compile SASS, and remove source map.
-2. Minify compiled CSS.
-3. Merge all scripts, uglify, rename ready.min.js.
-4. Watch all files in /scripts and /style.
+###### Tasks:
 
-###### Notifications:
+* `sass`: On style/\*.scss change: compile.
+* `scripts`: On scripts/\*.js change: concatenate, uglify.
 
-Uses Mac OSX native notifications, with Growl fallbacks.
-
-* On /style change: SASS compiled, CSS minified.
-* On /scripts change: JS uglified.
-
-# Looking Ahead
+## Looking Ahead
 
 - [x] Add package/dependency management
 - [ ] Add Bower section to README.md
-- [ ] Make the `.gulpfile` suck less
+- [x] Make `gulpfile.js` suck less
+- [x] Improve `gulpfile.js` documentation
