@@ -25,13 +25,17 @@ gulp.task('sass', function() {
     .pipe(notify('SASS compiled, CSS minified.'));
 });
 
-// uglify, rename js
+// concatenate and uglify scripts
 gulp.task('scripts', function() {
-  gulp.src('./scripts/*.js')
+  return gulp.src('scripts/*.js')
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(concat('scripts.js'))
+    .pipe(rename('scripts.min.js'))
     .pipe(uglify())
-    .pipe(rename('ready.min.js'))
-    .pipe(gulp.dest('./scripts'))
-    .pipe(notify('JS uglified.'));
+    .pipe(gulp.dest('./'))
+    .pipe(notify('JS concatenated and uglified.'));
 });
 
 // watch 
