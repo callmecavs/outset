@@ -7,9 +7,8 @@ var notify = require('gulp-notify');
 
 // compile sass, remove source map
 gulp.task('sass', shell.task([
-  'sass style/style.scss style.css',
-  'rm *.map']
-));
+  'sass style/style.scss style.css --sourcemap=none'
+]));
 
 // minify css
 gulp.task('css', function() {
