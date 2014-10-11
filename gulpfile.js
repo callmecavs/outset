@@ -22,7 +22,7 @@ gulp.task('sass', function() {
       errorHandler: onError
     }))
     .pipe(shell(['sass style/style.scss style.css --sourcemap=none']))
-    .pipe(notify('SASS compiled, CSS minified.'));
+    .pipe(notify('SASS compiled.'));
 });
 
 // concatenate and uglify scripts
