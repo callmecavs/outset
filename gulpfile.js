@@ -13,6 +13,10 @@ var notify  = require('gulp-notify');
 gulp.task('sass', shell.task([
   'sass style/style.scss style.css --sourcemap=none'
 ]));
+// error handler
+var onError = function(error) {
+  console.log(error);
+}
 
 // minify css
 gulp.task('css', function() {
