@@ -60,7 +60,7 @@ Short but sweet.
 
 ###### Notes
 
-* Use [bookmarklet.js](https://github.com/callmecavs/start/blob/master/scripts/bookmarklet.js) for debugging layouts. See [here](https://gist.github.com/addyosmani/fd3999ea7fce242756b1).
+* Use [bookmarklet.js](https://github.com/callmecavs/start/blob/master/bookmarklet.js) for debugging layouts. See [here](https://gist.github.com/addyosmani/fd3999ea7fce242756b1).
 
 ### Gulp
 
