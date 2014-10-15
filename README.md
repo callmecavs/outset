@@ -11,8 +11,7 @@ Front-end template, configured for HTML5, SASS (.scss), and JS - managed with Bo
 3. In your shell, run the following:
 
 ```bash
-$ (sudo) npm install
-$ (sudo) bower install
+$ (sudo) npm i && (sudo) bower i
 $ (sudo) gulp
 ```
 
