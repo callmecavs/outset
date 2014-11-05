@@ -71,7 +71,5 @@ Short but sweet.
 
 ## Looking Ahead
 
-- [x] Add package/dependency management
 - [ ] Add Bower section to README.md
-- [x] Make `gulpfile.js` suck less
-- [x] Improve `gulpfile.js` documentation
+- [ ] Consolidate Gulp/Bower into Tooling section of README?
