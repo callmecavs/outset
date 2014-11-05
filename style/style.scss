@@ -2,6 +2,14 @@
 
 // media queries
 
+// media query mixin
+
+@mixin mq($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
 // bourbon.io
 
 @import "bower/bourbon/dist/bourbon";
