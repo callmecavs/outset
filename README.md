@@ -6,8 +6,8 @@ Front-end template, configured for HTML5, SASS (.scss), and JS - built with Gulp
 
 ## Usage
 
-1. `git clone` this repo when beginning a new project.
-2. In your shell, run the following:
+1. `git clone` this repo to start a new project.
+2. Run the following in your shell:
 
 ```bash
 $ (sudo) rm -rf .git
@@ -27,44 +27,47 @@ The rest of these docs outline exactly what this boilerplate provides.
 
 ### HTML
 
-Short but sweet.
-
 * Set language to English.
 * Set charset to UTF-8.
 * Tell IE to render using newest mode available.
 * Set mobile viewport to be the device width, set zoom to 1, and lock zoom.
 * Load stylesheet.
 * Load jQuery 2.x branch from [Google Hosted Libraries](https://developers.google.com/speed/libraries/devguide#jquery).
-* Load scripts.
+* Load scripts before `</body>`.
 
 ###### Notes
 
-* Remember to fill in the `<title>`.
-* Remove `<script>` from `<head>` if IE9 support is not required.
+* Fill in the `<title>`.
+* Add your SEO stuff.
+* Remove `<script>` from `<head>` if IE9 HTML elements support is not required.
 
 ### SCSS
 
-* Load [Normalize.css](https://github.com/necolas/normalize.css/).
-* Load [Bourbon.io](http://bourbon.io/) mixin library. Documentation found [here](http://bourbon.io/docs/).
-* Set `*, *:before, *:after` box model to `border-box`, and `margin` to `0`.
+* Load [Normalize.css](https://github.com/necolas/normalize.css/). Docs [here](http://nicolasgallagher.com/about-normalize-css/).
+* Load [Bourbon.io](http://bourbon.io/) mixin library. Docs [here](http://bourbon.io/docs/).
+* Simple media query mixin.
+* Set `*, *:before, *:after` box model to `border-box`.
+* Set `line-height` to `1.3`.
+* Set `text-rendering` to `optimizeLegibility`.
 * Remove `text-decoration` on links.
 * Set `<strong>` `font-weight` to `bold`.
 * Set `<em>` `font-style` to `italic`.
 
 ###### Notes
 
-* `font` properties in `body` selector are left unset.
+* `font-family`, `font-wieght`, and `font-size` selectors are provided, but commented.
 
 ### JS
 
-* jQuery 2.x branch is loaded via CDN.
+Short but sweet.
+
 * $(document).ready() provided.
 
 ### Gulp
 
-1. Compile Sass (no sourcemap).
-2. Contenate and uglify scripts.
-3. Run local server on `localhost:3000`.
+1. Compile Sass - `compressed` mode, no `sourcemap`.
+2. Concat and uglify scripts.
+3. Start server on `localhost:3000`.
 3. Watch style and scripts.
 4. Notify when tasks complete.
 
@@ -72,7 +75,3 @@ Short but sweet.
 
 * `sass`: On style/\*.scss change: compile.
 * `scripts`: On scripts/\*.js change: concatenate, uglify.
-
-## Looking Ahead
-
-- [x] Remove Bower
