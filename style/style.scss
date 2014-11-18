@@ -10,9 +10,13 @@
   }
 }
 
+// normalize
+
+@import "normalize";
+
 // bourbon.io
 
-@import "bower/bourbon/dist/bourbon";
+@import "bourbon/bourbon";
 
 // box sizing
 

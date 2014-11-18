@@ -1,17 +1,16 @@
 # start
 
-Front-end template, configured for HTML5, SASS (.scss), and JS - managed with Bower, built with Gulp.
+Front-end template, configured for HTML5, SASS (.scss), and JS - built with Gulp.
 
 [![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
 
 ## Usage
 
 1. `git clone` this repo when beginning a new project.
-2. Fill in `"name"` in both `package.json` and `bower.json`.
-3. In your shell, run the following:
+2. In your shell, run the following:
 
 ```bash
-$ (sudo) npm i && (sudo) bower i
+$ (sudo) npm i
 $ (sudo) gulp
 ```
 
@@ -71,7 +70,4 @@ Short but sweet.
 
 ## Looking Ahead
 
-- [ ] Add Bower section to README.md
-- [ ] Consolidate Gulp/Bower into Tooling section of README?
-- [x] Use libsass to compile SASS (when it's stable)
-- [x] Add gulp-connect to avoid Python SimpleHTTPServer
+- [x] Remove Bower
