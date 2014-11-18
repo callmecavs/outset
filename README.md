@@ -73,3 +73,5 @@ Short but sweet.
 
 - [ ] Add Bower section to README.md
 - [ ] Consolidate Gulp/Bower into Tooling section of README?
+- [x] Use libsass to compile SASS (when it's stable)
+- [x] Add gulp-connect to avoid Python SimpleHTTPServer
