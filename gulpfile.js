@@ -8,6 +8,7 @@ var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
 var rename  = require('gulp-rename');
 var notify  = require('gulp-notify');
+var connect = require('gulp-connect');
 
 // error handler
 var onError = function(error) {
@@ -38,6 +39,14 @@ gulp.task('scripts', function() {
     .pipe(notify('JS concatenated and uglified.'));
 });
 
+// start up server
+gulp.task('server', function() {
+  return connect.server({
+    root: './',
+    port: 3000
+  });
+});
+
 // watch style and scripts
 gulp.task('watch', function() {
   gulp.watch('style/*.scss', ['sass']);
@@ -45,4 +54,4 @@ gulp.task('watch', function() {
 });
 
 // default task
-gulp.task('default', ['sass', 'scripts', 'watch']);
+gulp.task('default', ['server', 'sass', 'scripts', 'watch']);

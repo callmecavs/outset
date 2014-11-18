@@ -8,6 +8,7 @@
     "gulp-concat": "latest",
     "gulp-uglify": "latest",
     "gulp-rename": "latest",
-    "gulp-notify": "latest"
+    "gulp-notify": "latest",
+    "gulp-connect": "latest"
   }
 }
