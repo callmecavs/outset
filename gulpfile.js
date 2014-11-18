@@ -6,7 +6,6 @@ var plumber = require('gulp-plumber');
 var sass    = require('gulp-sass');
 var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
-var rename  = require('gulp-rename');
 var notify  = require('gulp-notify');
 var connect = require('gulp-connect');
 
@@ -28,8 +27,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src('scripts/*.js')
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(concat('scripts.js'))
-    .pipe(rename('scripts.min.js'))
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./'))
     .pipe(notify('JS concatenated and uglified.'));
