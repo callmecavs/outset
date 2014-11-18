@@ -1,9 +1,9 @@
 // init gulp
-var gulp   = require("gulp");
+var gulp   = require('gulp');
 
 // init plugins
 var plumber = require('gulp-plumber');
-var shell  = require('gulp-shell');
+var sass    = require('gulp-sass');
 var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
 var rename  = require('gulp-rename');
@@ -16,14 +16,14 @@ var onError = function(error) {
 }
 
 // compile sass, without source map
-// shell used to be compatible with bourbon
 gulp.task('sass', function() {
-  return gulp.src('style/*.scss')
+  return gulp.src('style/style.scss')
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(shell(['sass style/style.scss style.css --sourcemap=none']))
-    .pipe(notify('SASS compiled.'));
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(gulp.dest('./'))
+    .pipe(notify('SASS compiled.'))
 });
 
 // concatenate and uglify scripts

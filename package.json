@@ -4,7 +4,7 @@
   "devDependencies": {
     "gulp": "latest",
     "gulp-plumber": "latest",
-    "gulp-shell": "latest",
+    "gulp-sass": "^1.2.0",
     "gulp-concat": "latest",
     "gulp-uglify": "latest",
     "gulp-rename": "latest",
