@@ -36,7 +36,6 @@ gulp.task('scripts', function() {
 // spin up server
 gulp.task('server', function() {
   return connect.server({
-    root: './',
     port: 3000
   });
 });
