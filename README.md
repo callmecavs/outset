@@ -10,11 +10,16 @@ Front-end template, configured for HTML5, SASS (.scss), and JS - built with Gulp
 2. In your shell, run the following:
 
 ```bash
+$ (sudo) rm -rf .git
 $ (sudo) npm i
 $ (sudo) gulp
 ```
 
-Read the rest of these docs! The `index.html` file has the dependencies linked up, and the `.gulpfile` will run without errors, but the notes below outline things in the HTML/CSS that need to be filled in before deploying.
+> That's it! The `index.html` file has everything wired up, and the `gulpfile` will run without errors, all right out the box!
+
+## About
+
+The rest of these docs outline exactly what this boilerplate provides.
 
 ### General
 
@@ -48,8 +53,7 @@ Short but sweet.
 
 ###### Notes
 
-* Remember to set `font` properties in `body` selector.
-* SASS is compiled _without_ generating a source map.
+* `font` properties in `body` selector are left unset.
 
 ### JS
 
@@ -58,10 +62,11 @@ Short but sweet.
 
 ### Gulp
 
-1. Compile SCSS, without source map.
+1. Compile Sass (no sourcemap).
 2. Contenate and uglify scripts.
+3. Run local server on `localhost:3000`.
 3. Watch style and scripts.
-4. Notify when task complete.
+4. Notify when tasks complete.
 
 ###### Tasks:
 
