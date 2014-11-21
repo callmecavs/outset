@@ -2,7 +2,6 @@
 var gulp   = require('gulp');
 
 // plugins
-var plumber = require('gulp-plumber');
 var sass    = require('gulp-sass');
 var concat  = require('gulp-concat');
 var uglify  = require('gulp-uglify');
@@ -10,15 +9,16 @@ var notify  = require('gulp-notify');
 var connect = require('gulp-connect');
 
 // error handler
-var onError = function(error) {
-  console.log(error);
+var onError = function(err) {
+  console.log(err);
+  this.emit('end');
 }
 
 // compile sass
 gulp.task('sass', function() {
   return gulp.src('style/style.scss')
-    .pipe(plumber({ errorHandler: onError }))
     .pipe(sass({ outputStyle: 'compressed' }))
+    .on('error', onError)
     .pipe(gulp.dest('./'))
     .pipe(notify('SASS compiled.'))
 });
@@ -26,9 +26,10 @@ gulp.task('sass', function() {
 // concat and uglify scripts
 gulp.task('scripts', function() {
   return gulp.src('scripts/*.js')
-    .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('scripts.min.js'))
+    .on('error', onError)
     .pipe(uglify())
+    .on('error', onError)
     .pipe(gulp.dest('./'))
     .pipe(notify('JS concatenated and uglified.'));
 });
