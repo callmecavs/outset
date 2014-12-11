@@ -28,6 +28,11 @@
 
 // globals
 
+html {
+  // use rems IE > 9, 1rem = 10px
+  font-size: 62.5%;
+}
+
 body {
   // font-family: ;
   // font-weight: ;
