@@ -112,3 +112,4 @@ The `dist` folder is included in this repo only to demonstrate file structure.
 ## Todo
 
 - [x] Release v2.0!
+- [ ] Potentially add a `stucture` or `views` folder inside `src`, for projects containing multiple HTML files
