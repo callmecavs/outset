@@ -21,7 +21,7 @@ In your browser:
 http://localhost:3000/
 ```
 
-**Get building!** The `index.html` file has everything wired up, and `gulp` will run without errors.
+Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
 
 ## Docs
 
