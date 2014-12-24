@@ -30,6 +30,7 @@ Get building! The `index.html` file has everything wired up, and `gulp` will run
 Work in the `src` folder, deploy from the `dist` folder. Simple as that.
 
 ```
+.
 ├── package.json
 ├── gulpfile.js
 ├── dist
