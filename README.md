@@ -21,7 +21,7 @@ In your browser:
 http://localhost:3000/
 ```
 
-> Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
+**Get building!** The `index.html` file has everything wired up, and `gulp` will run without errors.
 
 ## Docs
 
@@ -29,7 +29,25 @@ http://localhost:3000/
 
 Work in the `src` folder, deploy from the `dist` folder. Simple as that.
 
-> The `dist` folder is included in this repo only to demonstrate file structure.
+```
+├── package.json
+├── gulpfile.js
+├── dist
+│   ├── index.html
+│   ├── scripts.js
+│   └── style.css
+└── src
+    ├── images
+    ├── index.html
+    ├── scripts
+    │   └── ready.js
+    └── style
+        ├── bourbon
+        ├── _normalize.scss
+        └── style.scss
+```
+
+The `dist` folder is included in this repo only to demonstrate file structure.
 
 ### HTML
 
@@ -66,6 +84,8 @@ Work in the `src` folder, deploy from the `dist` folder. Simple as that.
 ###### Notes
 
 * `font-family`, `font-weight`, and `font-size` selectors are provided, but commented out in `body`
+
+> Run `bourbon install` in the `style` folder before compiling
 
 ### JS
 
