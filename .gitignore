@@ -1,6 +1,4 @@
 .DS_Store
 node_modules
-bower
-*.map
-.sass-cache/*
-style/bourbon
+.sass-cache
+bourbon

@@ -1,51 +1,61 @@
-// gulp
-var gulp   = require('gulp');
-
-// plugins
-var sass    = require('gulp-sass');
-var concat  = require('gulp-concat');
-var uglify  = require('gulp-uglify');
-var notify  = require('gulp-notify');
-var connect = require('gulp-connect');
+var gulp    = require('gulp');
+var plugins = require('gulp-load-plugins')();
 
 // error handler
-var onError = function(err) {
-  console.log(err);
+// https://github.com/gulpjs/gulp/issues/259
+var onError = function(error) {
+  console.log(error);
   this.emit('end');
-}
+};
 
-// compile sass
-gulp.task('sass', function() {
-  return gulp.src('style/style.scss')
-    .pipe(sass({ outputStyle: 'compressed' }))
+// minify html
+gulp.task('html', function() {
+  return gulp.src('src/index.html')
+    .pipe(plugins.htmlmin({ collapseWhitespace: true, removeComments: true }))
     .on('error', onError)
-    .pipe(gulp.dest('./'))
-    .pipe(notify('SASS compiled.'))
+    .pipe(gulp.dest('dist'));
+});
+
+// compile and compress sass
+gulp.task('sass', function() {
+  return gulp.src('src/style/style.scss')
+    .pipe(plugins.sass({ outputStyle: 'compressed' }))
+    .on('error', onError)
+    .pipe(gulp.dest('dist'));
 });
 
 // concat and uglify scripts
 gulp.task('scripts', function() {
-  return gulp.src('scripts/*.js')
-    .pipe(concat('scripts.min.js'))
+  return gulp.src('src/scripts/*.js')
+    .pipe(plugins.concat('scripts.js'))
+    .pipe(plugins.uglify())
     .on('error', onError)
-    .pipe(uglify())
-    .on('error', onError)
-    .pipe(gulp.dest('./'))
-    .pipe(notify('JS concatenated and uglified.'));
+    .pipe(gulp.dest('dist'));
 });
 
-// spin up server
+// minify all images
+gulp.task('images', function() {
+  return gulp.src('src/images/**/*')
+    .pipe(plugins.imagemin({ progressive: true }))
+    .on('error', onError)
+    .pipe(gulp.dest('dist/images'));
+});
+
+// start local server on port 3000
 gulp.task('server', function() {
-  return connect.server({
+  return plugins.connect.server({
+    root: 'dist',
     port: 3000
   });
 });
 
-// watch style and scripts
+// watch sass and js files
 gulp.task('watch', function() {
-  gulp.watch('style/*.scss', ['sass']);
-  gulp.watch('scripts/*.js', ['scripts']);
+  gulp.watch('src/index.html', ['html']);
+  gulp.watch('src/style/*.scss', ['sass']);
+  gulp.watch('src/scripts/*.js', ['scripts']);
+  gulp.watch('src/images/**/*', ['images']);
 });
 
 // default task
-gulp.task('default', ['server', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['server', 'html', 'sass', 'scripts', 'images', 'watch']);

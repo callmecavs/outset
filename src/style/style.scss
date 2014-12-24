@@ -1,0 +1,49 @@
+// reset and mixin library
+
+@import "normalize";
+@import "bourbon/bourbon";
+
+// color vars
+
+// breakpoints
+
+// media query mixins
+
+@mixin mq-min($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq-max($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// basic globals
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+html {
+  // use rems IE >= 9, 1rem = 10px
+  font-size: 62.5%;
+}
+
+body {
+  // font-family: ;
+  // font-weight: ;
+  // font-size: ;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
+}
+
+a      { text-decoration: none; }
+strong { font-weight: bold; }
+em     { font-style: italic; }
+
+// partials

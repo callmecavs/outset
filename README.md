@@ -1,77 +1,93 @@
 # start
 
-Front-end template, configured for HTML5, SASS (.scss), and JS - built with Gulp.
+Minimal front-end foundation. Configured for HTML5 and Sass, built with Gulp.
 
 [![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
 
-## Usage
+## Getting Started
 
-1. `git clone` this repo to start a new project.
-2. Run the following in your shell:
+In your shell:
 
 ```bash
-$ (sudo) rm -rf .git
-$ (sudo) npm i
-$ (sudo) gulp
+$ git clone https://github.com/callmecavs/start.git
+$ rm -rf .git
+$ npm i
+$ gulp
 ```
 
-> That's it! The `index.html` file has everything wired up, and the `gulpfile` will run without errors, all right out the box!
+In your browser:
 
-## About
+```
+http://localhost:3000/
+```
 
-The rest of these docs outline exactly what this boilerplate provides.
+> Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
 
-### General
+## Docs
 
-* Tabs replaced with 2 spaces.
+### Structure
+
+Work in the `src` folder, deploy from the `dist` folder. Simple as that.
+
+> The `dist` folder is included in this repo only to demonstrate file structure.
 
 ### HTML
 
-* Set language to English.
-* Set charset to UTF-8.
-* Tell IE to render using newest mode available.
-* Set mobile viewport to be the device width, set zoom to 1, and lock zoom.
-* Load stylesheet.
-* Load jQuery 2.x branch from [Google Hosted Libraries](https://developers.google.com/speed/libraries/devguide#jquery).
-* Load scripts before `</body>`.
+* Language: `en-US`
+* Charset: `UTF-8`
+* IE rendering mode: `edge`
+* Viewport: `width=device-width, initial-scale=1, maximum-scale=1`
+* Load `style.css`
+* Load `scripts.js`
 
 ###### Notes
 
-* Fill in the `<title>`.
-* Add your SEO stuff.
-* Remove `<script>` from `<head>` if IE9 HTML elements support is not required.
+* Fill in `<title>`
+* Add more `<meta>`
 
-### SCSS
+> Remove conditional `<script>` from `<head>` if support for IE9 isn't required
 
-* Load [Normalize.css](https://github.com/necolas/normalize.css/). Docs [here](http://nicolasgallagher.com/about-normalize-css/).
-* Load [Bourbon.io](http://bourbon.io/) mixin library. Docs [here](http://bourbon.io/docs/).
-* Simple media query mixin.
-* Set `*, *:before, *:after` box model to `border-box`.
-* Set `line-height` to `1.3`.
-* Set `text-rendering` to `optimizeLegibility`.
-* Remove `text-decoration` on links.
-* Set `<strong>` `font-weight` to `bold`.
-* Set `<em>` `font-style` to `italic`.
+### Sass
+
+* Load [Normalize.css](http://nicolasgallagher.com/about-normalize-css/)
+* Load [Bourbon.io](http://bourbon.io/docs/)
+* Simple media query min-width and max-width mixins
+* HTML tag `font-size` set to `62.5%`: `1rem` = `10px`
+
+###### Globals
+
+* Set `*, *:before, *:after` box model to `border-box`
+* Set `line-height` to `1.3`
+* Set `text-rendering` to `optimizeLegibility`
+* Remove `text-decoration` on links
+* Set `<strong>` `font-weight` to `bold`
+* Set `<em>` `font-style` to `italic`
 
 ###### Notes
 
-* `font-family`, `font-wieght`, and `font-size` selectors are provided, but commented.
+* `font-family`, `font-weight`, and `font-size` selectors are provided, but commented out in `body`
 
 ### JS
 
-Short but sweet.
-
-* $(document).ready() provided.
+* Load jQuery 2.1.3 [(CDN)](https://developers.google.com/speed/libraries/devguide#jquery)
+* Load Velocity.js 1.1 [(CDN)](http://www.jsdelivr.com/#!velocity)
+* $(document).ready() provided in `ready.js`
 
 ### Gulp
 
-1. Compile Sass - `compressed` mode, no `sourcemap`.
-2. Concat and uglify scripts.
-3. Start server on `localhost:3000`.
-3. Watch style and scripts.
-4. Notify when tasks complete.
+* Minify HTML
+* Compile Sass: `compressed` mode
+* Concatenate and uglify scripts
+* Optimize images: `gif`, `jpg`, `png`, and `svg`
+* Start local server on `port 3000`
+* Watch HTML, Sass, JS, and images
+* Catch errors, log them to console
 
-###### Tasks:
+###### Notes
 
-* `sass`: On style/\*.scss change: compile.
-* `scripts`: On scripts/\*.js change: concatenate, uglify.
+* Default task does all the above
+* See `package.json` for version details
+
+## Todo
+
+- [x] Release v2.0!
