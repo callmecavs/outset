@@ -2,7 +2,7 @@
 
 Minimal front-end foundation. Configured for HTML5 and Sass, built with Gulp.
 
-[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 ## Getting Started
 
