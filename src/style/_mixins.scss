@@ -1,0 +1,21 @@
+// media query mixins
+
+@mixin mq-max($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq-min($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// vertical center
+
+%vertical-center {
+  @include transform(translateY(-50%));
+  position: relative;
+  top: 50%;
+}

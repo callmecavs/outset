@@ -1,25 +1,12 @@
-// reset and mixin library
+// reset and mixins
 
 @import "normalize";
 @import "bourbon/bourbon";
+@import "mixins";
 
 // color vars
 
 // breakpoints
-
-// media query mixins
-
-@mixin mq-min($width) {
-  @media only screen and (min-width: $width) {
-    @content;
-  }
-}
-
-@mixin mq-max($width) {
-  @media only screen and (max-width: $width) {
-    @content;
-  }
-}
 
 // basic globals
 
