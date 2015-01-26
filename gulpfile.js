@@ -13,7 +13,8 @@ gulp.task('html', function() {
   return gulp.src('src/index.html')
     .pipe(plugins.htmlmin({ collapseWhitespace: true, removeComments: true }))
     .on('error', onError)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(plugins.connect.reload());
 });
 
 // compile and compress sass
@@ -21,7 +22,8 @@ gulp.task('sass', function() {
   return gulp.src('src/style/style.scss')
     .pipe(plugins.sass({ outputStyle: 'compressed' }))
     .on('error', onError)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(plugins.connect.reload());
 });
 
 // concat and uglify scripts
@@ -30,7 +32,8 @@ gulp.task('scripts', function() {
     .pipe(plugins.concat('scripts.js'))
     .pipe(plugins.uglify())
     .on('error', onError)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(plugins.connect.reload());
 });
 
 // minify all images
@@ -45,7 +48,8 @@ gulp.task('images', function() {
 gulp.task('server', function() {
   return plugins.connect.server({
     root: 'dist',
-    port: 3000
+    port: 3000,
+    livereload: true
   });
 });
 
