@@ -23,6 +23,12 @@ http://localhost:3000/
 
 Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
 
+## Browser Support
+
+All that matters: IE9+.
+
+Remove the IE conditional `<script>` in the `<head>` for IE10+.
+
 ## Docs
 
 ### Structure
@@ -63,8 +69,6 @@ The `dist` folder is included in this repo only to demonstrate file structure.
 
 * Fill in `<title>`
 * Add more `<meta>`
-
-> Remove conditional `<script>` from `<head>` if support for IE9 isn't required
 
 ### Sass
 
