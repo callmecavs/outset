@@ -111,9 +111,8 @@ The `dist` folder is included in this repo only to demonstrate file structure.
 ###### Notes
 
 * Default task does all the above
-* See `package.json` for version details
+* See `package.json` for Gulp plugin version details
 
 ## Todo
 
-- [x] Release v2.0!
-- [ ] Potentially add a `stucture` or `views` folder inside `src`, for projects containing multiple HTML files
+- [ ] Create a CLI, publish to NPM
