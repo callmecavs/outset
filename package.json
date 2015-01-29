@@ -1,6 +1,21 @@
 {
   "name": "start",
-  "version": "2.0.0",
+  "version": "2.1.0",
+  "description": "Minimal front-end foundation. Configured for HTML5 and Sass, built with Gulp.",
+  "author": "@callmecavs",
+  "license": "MIT",
+
+  "homepage": "https://github.com/callmecavs/start",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callmecavs/start.git"
+  },
+  "bugs": {
+    "url": "https://github.com/callmecavs/start/issues"
+  },
+
+  "preferGlobal": true,
+
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.2",
