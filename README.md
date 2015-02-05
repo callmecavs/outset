@@ -1,4 +1,4 @@
-# start
+# outset
 
 Minimal front-end foundation. Configured for HTML5 and Sass, built with Gulp.
 
