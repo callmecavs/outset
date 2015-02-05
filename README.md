@@ -1,24 +1,21 @@
 # outset
 
-Minimal front-end foundation. Configured for HTML5 and Sass, built with Gulp.
+Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Gulp.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-## Getting Started
-
-In your shell:
+## Install
 
 ```bash
-$ git clone https://github.com/callmecavs/start.git
-$ rm -rf .git
-$ npm i
-$ gulp
+$ (sudo) npm install outset -g
 ```
 
-In your browser:
+## Use
 
 ```
-http://localhost:3000/
+# in your new working directory
+
+$ (sudo) outset
 ```
 
 Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
