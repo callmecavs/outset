@@ -90,12 +90,10 @@ The `dist` folder is included in this repo only to demonstrate file structure.
 
 * `font-family`, `font-weight`, and `font-size` selectors are provided, but commented out in `body`
 
-> Run `bourbon install` in the `style` folder before compiling
-
 ### JS
 
 * Load jQuery 2.1.3 [(CDN)](https://developers.google.com/speed/libraries/devguide#jquery)
-* Load Velocity.js 1.1 [(CDN)](http://www.jsdelivr.com/#!velocity)
+* Load Velocity.js 1.2.1 [(CDN)](http://www.jsdelivr.com/#!velocity)
 * $(document).ready() provided in `ready.js`
 
 ### Gulp
