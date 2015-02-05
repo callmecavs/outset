@@ -20,6 +20,8 @@ $ (sudo) outset
 
 Get building! The `index.html` file has everything wired up, and `gulp` will run without errors.
 
+> The most recent, compatible version of [Bourbon](http://bourbon.io/) is included, because not all versions compile with [libsass](https://github.com/sass/libsass). And because it's convenient.
+
 ## Browser Support
 
 All that matters: IE9+.
@@ -34,19 +36,20 @@ Work in the `src` folder, deploy from the `dist` folder. Simple as that.
 
 ```
 start/
-├── package.json
+├── .gitignore
 ├── gulpfile.js
+├── package.json
 ├── dist/
 │   ├── index.html
 │   ├── scripts.js
 │   └── style.css
 └── src/
-    ├── images/
     ├── index.html
     ├── scripts/
     │   └── ready.js
     └── style/
         ├── bourbon/
+        ├── _mixins.scss
         ├── _normalize.scss
         └── style.scss
 ```
@@ -109,7 +112,3 @@ The `dist` folder is included in this repo only to demonstrate file structure.
 
 * Default task does all the above
 * See `package.json` for Gulp plugin version details
-
-## Todo
-
-- [ ] Create a CLI, publish to NPM
