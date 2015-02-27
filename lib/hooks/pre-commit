@@ -1,0 +1,32 @@
+#!/bin/sh
+
+JS_ERRORS=0
+SCSS_ERRORS=0
+
+if git diff --cached --name-only --diff-filter=ACM | grep ".js$" >/dev/null 2>&1; then
+  JS=$(jshint src/scripts/** | sed \$d)
+
+  if [ ! -z "$JS" ]; then
+    JS_ERRORS=$(echo "$JS" | wc -l | tr -d ' ')
+    echo "JSHINT ($JS_ERRORS)"
+    echo "$JS"
+    echo
+  fi
+fi
+
+if git diff --cached --name-only --diff-filter=ACM | grep ".scss$" >/dev/null 2>&1; then
+  SCSS=$(scss-lint src/style/**)
+
+  if [ ! -z "$SCSS" ]; then
+    SCSS_ERRORS=$(echo "$SCSS" | wc -l | tr -d ' ')
+    echo "SCSS-LINT ($SCSS_ERRORS)"
+    echo "$SCSS"
+    echo
+  fi
+fi
+
+if [[ "$JS_ERRORS" -ne 0 ]] || [[ "$SCSS_ERRORS" -ne 0 ]]; then
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+  echo "could not commit, $(($JS_ERRORS + $SCSS_ERRORS)) errors"
+  exit 1
+fi

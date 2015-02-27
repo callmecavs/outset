@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# init vars
+LIB=~/.cinderblock/lib
+CWD=$(pwd)
+
+# check if empty
+if [ "$(ls -A $CWD)" ]; then
+  echo "$CWD is not an empty directory"
+  exit 1
+fi
+
+# check if no args
+if [[ $# -eq 0 ]] ; then
+  echo "no args given"
+  exit 1
+fi
+
+# check that input is corect
+if [[ ! -d "$LIB/templates/$1" ]]; then
+  echo "not a correct argument"
+  exit 1
+fi
+
+# set up git
+git init $CWD
+rm $CWD/.git/hooks/*.sample
+cp -r $LIB/hooks/ $CWD/.git/hooks
+chmod +x $CWD/.git/hooks/*
+
+# copy over
+cp -r $LIB/base/ $CWD
+cp -r $LIB/templates/$1/views/ $CWD/src/views
+cp $LIB/templates/$1/* $CWD/ 2>/dev/null
+
+# install dependencies
+npm install
+
+exit

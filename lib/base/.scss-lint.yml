@@ -1,0 +1,24 @@
+# everything default except...
+
+exclude: "src/style/bourbon/**"
+
+linters:
+
+  ColorVariable:
+    enabled: false
+
+  HexLength:
+    style: long
+
+  HexNotation:
+    style: uppercase
+
+  PropertySortOrder:
+    order: smacss
+    ignore_unspecified: true
+
+  StringQuotes:
+    style: double_quotes
+
+  VendorPrefixes:
+    enabled: false
