@@ -1,9 +1,15 @@
 {
   "name": "outset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Gulp.",
   "author": "callmecavs",
   "license": "MIT",
+
+  "keywords": [
+    "boilerplate",
+    "front-end",
+    "minimal"
+  ],
 
   "bin": {
     "outset": "outset.js"
