@@ -1,8 +1,10 @@
 // reset and mixins
 
-@import "normalize";
 @import "bourbon/bourbon";
 @import "mixins";
+
+@import "normalize";
+@import "utils";
 @import "shame";
 
 // color vars
