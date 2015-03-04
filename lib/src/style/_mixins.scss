@@ -1,4 +1,4 @@
-// media query mixins
+// media queries
 
 @mixin mq-max($width) {
   @media screen and (max-width: $width) {

@@ -1,0 +1,10 @@
+.wrapper {
+  @include clearfix;
+}
+
+.container {
+  @include clearfix;
+  // width: ;
+  // max-width: ;
+  margin: 0 auto;
+}
