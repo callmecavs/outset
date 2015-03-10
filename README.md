@@ -15,9 +15,9 @@ $ (sudo) npm install outset -g
 In your new working directory:
 
 ```bash
-$ (sudo) outset
-$ (sudo) npm i
-$ (sudo) gulp
+$ [sudo] outset
+$ [sudo] npm i
+$ [sudo] gulp
 ```
 
 In your browser:
