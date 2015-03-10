@@ -7,7 +7,7 @@ Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built 
 ## Install
 
 ```bash
-$ (sudo) npm install outset -g
+$ [sudo] npm install outset -g
 ```
 
 ## Use
