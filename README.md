@@ -81,7 +81,34 @@ Just mixins and basic global styles.
 
 ### JS
 
-Just 2 libraries and a `document.ready()`.
+A namespace to build in:
+
+```javascript
+'use strict';
+
+// constructor
+
+function Outset(options) {
+
+  this.init();
+}
+
+// methods
+
+Outset.prototype.init = function() {
+
+};
+
+// instance
+
+var outset = new Outset({
+
+});
+```
+
+> Be sure to use a namespace other than "Outset" to avoid conflicts.
+
+Libraries:
 
 * Load jQuery 2.1.3 [(CDN)](https://developers.google.com/speed/libraries/devguide#jquery)
 * Load Velocity.js 1.2.1 [(CDN)](http://www.jsdelivr.com/#!velocity)
