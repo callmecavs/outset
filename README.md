@@ -23,7 +23,7 @@ $ [sudo] gulp
 In your browser:
 
 ```
-[http://localhost:3000/](http://localhost:3000/)
+http://localhost:3000/
 ```
 
 Work in the `src` folder, deploy from the `dist` folder. Simple as that.
