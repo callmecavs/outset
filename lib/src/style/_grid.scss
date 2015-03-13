@@ -1,9 +1,9 @@
 .wrapper {
-  @include clearfix;
+  @extend %clearfix;
 }
 
 .container {
-  @include clearfix;
+  @extend %clearfix;
   // width: ;
   // max-width: ;
   margin: 0 auto;
