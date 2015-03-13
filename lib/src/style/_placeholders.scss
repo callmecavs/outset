@@ -1,0 +1,29 @@
+// clearfix
+
+%clearfix {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+// hide text
+
+%hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+// vertical center
+
+%vertical-center {
+  @include transform(translateY(-50%));
+  position: relative;
+  top: 50%;
+}
