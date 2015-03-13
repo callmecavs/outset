@@ -1,3 +1,7 @@
+// reset
+
+@import "reset";
+
 // mixins and placeholders
 
 @import "bourbon/bourbon";
@@ -8,29 +12,14 @@
 
 // breakpoints
 
-// basic globals
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  // use rems IE >= 9, 1rem = 10px
-  font-size: 62.5%;
-}
-
 body {
   // font-family: ;
   // font-weight: ;
   // font-size: ;
   line-height: 1.3;
-  text-rendering: optimizeLegibility;
 }
 
-a      { text-decoration: none; }
-strong { font-weight: bold; }
-em     { font-style: italic; }
-
 // partials
+
+@import "grid";
+@import "shame";
