@@ -1,40 +1,25 @@
-// reset and mixins
+// reset
+
+@import "reset";
+
+// mixins and placeholders
 
 @import "bourbon/bourbon";
 @import "mixins";
-
-@import "normalize";
-@import "utils";
-@import "grid";
-@import "shame";
+@import "placeholders";
 
 // color vars
 
 // breakpoints
-
-// basic globals
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  // use rems IE >= 9, 1rem = 10px
-  font-size: 62.5%;
-}
 
 body {
   // font-family: ;
   // font-weight: ;
   // font-size: ;
   line-height: 1.3;
-  text-rendering: optimizeLegibility;
 }
 
-a      { text-decoration: none; }
-strong { font-weight: bold; }
-em     { font-style: italic; }
-
 // partials
+
+@import "grid";
+@import "shame";

@@ -11,11 +11,3 @@
     @content;
   }
 }
-
-// vertical center
-
-%vertical-center {
-  @include transform(translateY(-50%));
-  position: relative;
-  top: 50%;
-}

@@ -60,10 +60,8 @@ Just an `index.html` file.
 
 Just mixins and basic global styles.
 
-* Reset with [Normalize.css](http://nicolasgallagher.com/about-normalize-css/)
 * Mixins via [Bourbon.io](http://bourbon.io/docs/)
 * Simple media query mixins
-* More utility classes coming soon
 * Configured for `rem` (`1rem` = `10px`)
 
 ###### Globals
