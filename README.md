@@ -26,7 +26,7 @@ In your browser:
 http://localhost:3000/
 ```
 
-Work in the `src` folder, deploy from the `dist` folder. Simple as that.
+Work in the `src` folder, deploy from the `dist` folder.
 
 Get building! The `index.html` file has everything wired up. Review the included `gulp` tasks below.
 
@@ -42,40 +42,40 @@ Remove the IE conditional `<script>` in the `<head>` for IE10+.
 
 ### HTML
 
-Just an `index.html` file.
+Just an `index.html` file.  Shown here without the conditional IE9 script:
 
-* Language: `en-US`
-* Charset: `UTF-8`
-* IE rendering mode: `edge`
-* Viewport: `width=device-width, initial-scale=1, maximum-scale=1`
-* Load `style.css`
-* Load `scripts.js`
+```html
+<!DOCTYPE html>
 
-###### Notes
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-* Fill in `<title>`
-* Add more `<meta>`
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+    </div><!-- END wrapper -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+```
 
 ### Sass
 
-Just mixins and basic global styles.
+A custom reset, mixins, and placeholder selectors.
 
-* Mixins via [Bourbon.io](http://bourbon.io/docs/)
-* Simple media query mixins
+* [Bourbon.io](http://bourbon.io/docs/)
+* Mixins for media queries
+* Placeholder selectors for: clearfix, hiding text, and vertical centering
 * Configured for `rem` (`1rem` = `10px`)
-
-###### Globals
-
-* Set `*, *:before, *:after` box model to `border-box`
-* Set `line-height` to `1.3`
-* Set `text-rendering` to `optimizeLegibility`
-* Remove `text-decoration` on links
-* Set `<strong>` `font-weight` to `bold`
-* Set `<em>` `font-style` to `italic`
-
-###### Notes
-
-* `font-family`, `font-weight`, and `font-size` selectors are provided, but commented out in `body`
 
 ### JS
 
@@ -109,7 +109,7 @@ var outset = new Outset({
 Libraries:
 
 * Load jQuery 2.1.3 [(CDN)](https://developers.google.com/speed/libraries/devguide#jquery)
-* Load Velocity.js 1.2.1 [(CDN)](http://www.jsdelivr.com/#!velocity)
+* Load Velocity.js 1.2.2 [(CDN)](http://www.jsdelivr.com/#!velocity)
 
 ### Gulp
 
@@ -127,12 +127,6 @@ Tasks:
 Watch for changes:
 
 * HTML, Sass, JS, and images
-
-###### Notes
-
-* Default task does all the above, just run it once!
-* Errors are handled and logged to terminal
-* See `package.json` for Gulp plugin version details
 
 ## Looking Ahead
 
