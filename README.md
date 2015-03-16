@@ -79,7 +79,7 @@ A custom reset, mixins, and placeholder selectors.
 
 ### JS
 
-A namespace to build in:
+A namespace to build in (that you should rename):
 
 ```javascript
 'use strict';
@@ -88,14 +88,14 @@ A namespace to build in:
 
 function Outset(options) {
 
-  this.init();
+  document.addEventListener('DOMContentLoaded', this.init(), false);
 }
 
 // methods
 
 Outset.prototype.init = function() {
 
-};
+}
 
 // instance
 
@@ -103,8 +103,6 @@ var outset = new Outset({
 
 });
 ```
-
-> Be sure to use a namespace other than "Outset" to avoid conflicts.
 
 Libraries:
 
