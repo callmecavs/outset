@@ -49,6 +49,12 @@ section {
   display: block;
 }
 
+// hidden attribute
+
+[hidden] {
+  display: none;
+}
+
 // image responsiveness
 
 img {
@@ -72,6 +78,7 @@ ul {
 
 textarea {
   overflow: auto;
+  resize: vertical;
 }
 
 // code style
