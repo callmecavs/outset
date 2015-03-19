@@ -11,3 +11,10 @@
     @content;
   }
 }
+
+// letter spacing
+
+@mixin letter-spacing($length) {
+  letter-spacing: $length;
+  text-indent: $length;
+}
