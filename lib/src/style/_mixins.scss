@@ -12,6 +12,12 @@
   }
 }
 
+// size
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
 // letter spacing
 
 @mixin letter-spacing($length) {
