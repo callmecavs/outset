@@ -18,6 +18,15 @@
   width: $width;
   height: $height;
 }
+
+// hide text
+
+@mixin hide-text() {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
 // letter spacing
 
 @mixin letter-spacing($length) {
