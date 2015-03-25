@@ -6,18 +6,6 @@
   }
 }
 
-@mixin mq-max($width) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
-}
-
-@mixin mq-between($min-width, $max-width) {
-  @media screen and (min-width: $min-width) and (max-width: $max-width) {
-    @content;
-  }
-}
-
 // size
 
 @mixin size($width, $height: $width) {
