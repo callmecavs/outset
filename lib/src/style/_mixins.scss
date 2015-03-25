@@ -1,4 +1,4 @@
-// media queries
+// media query
 
 @mixin mq-min($width) {
   @media screen and (min-width: $width) {
