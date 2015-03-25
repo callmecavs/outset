@@ -13,12 +13,12 @@
   height: $height;
 }
 
-// hide text
+// translate3d helper
 
-@mixin hide-text() {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
+@mixin translate($axis, $value) {
+  @if $axis == "x" { transform: translate3d($value, 0, 0); }
+  @if $axis == "y" { transform: translate3d(0, $value, 0); }
+  @if $axis == "z" { transform: translate3d(0, 0, $value); }
 }
 
 // letter spacing
