@@ -6,19 +6,32 @@
   }
 }
 
-// size
-
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
-
 // translate3d helper
 
 @mixin translate($axis, $value) {
   @if $axis == "x" { transform: translate3d($value, 0, 0); }
   @if $axis == "y" { transform: translate3d(0, $value, 0); }
   @if $axis == "z" { transform: translate3d(0, 0, $value); }
+}
+
+// position
+
+@mixin position($context, $coordinates) {
+  position: $context;
+
+  @if length($coordinates) == 4 {
+    top:    nth($coordinates, 1);
+    right:  nth($coordinates, 2);
+    bottom: nth($coordinates, 3);
+    left:   nth($coordinates, 4);
+  }
+}
+
+// size
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
 }
 
 // letter spacing
