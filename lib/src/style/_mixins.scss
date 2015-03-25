@@ -1,3 +1,17 @@
+// clearfix
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
 // media query
 
 @mixin mq-min($width) {
@@ -6,7 +20,7 @@
   }
 }
 
-// translate3d helper
+// translate helper
 
 @mixin translate($axis, $value) {
   @if $axis == "x" { transform: translate3d($value, 0, 0); }
@@ -27,11 +41,27 @@
   }
 }
 
+// vertical center
+
+@mixin vertical-center {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+
 // size
 
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
+}
+
+// hide text
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 // letter spacing
