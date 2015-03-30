@@ -12,20 +12,27 @@
   }
 }
 
+// hide text
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+// letter spacing
+
+@mixin letter-spacing($length) {
+  letter-spacing: $length;
+  text-indent: $length;
+}
+
 // media query
 
 @mixin mq-min($width) {
   @media screen and (min-width: $width) {
     @content;
   }
-}
-
-// translate helper
-
-@mixin translate($axis, $value) {
-  @if $axis == "x" { transform: translate3d($value, 0, 0); }
-  @if $axis == "y" { transform: translate3d(0, $value, 0); }
-  @if $axis == "z" { transform: translate3d(0, 0, $value); }
 }
 
 // position
@@ -41,14 +48,6 @@
   }
 }
 
-// vertical center
-
-@mixin vertical-center {
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
-}
-
 // size
 
 @mixin size($width, $height: $width) {
@@ -56,17 +55,18 @@
   height: $height;
 }
 
-// hide text
+// translate helper
 
-@mixin hide-text {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
+@mixin translate($axis, $value) {
+  @if $axis == "x" { transform: translate3d($value, 0, 0); }
+  @if $axis == "y" { transform: translate3d(0, $value, 0); }
+  @if $axis == "z" { transform: translate3d(0, 0, $value); }
 }
 
-// letter spacing
+// vertical center
 
-@mixin letter-spacing($length) {
-  letter-spacing: $length;
-  text-indent: $length;
+@mixin vertical-center {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
 }
