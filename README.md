@@ -12,7 +12,7 @@ $ [sudo] npm install outset -g
 
 ## Use
 
-In your new working directory:
+In your working directory:
 
 ```bash
 $ [sudo] outset
@@ -112,9 +112,9 @@ Tasks:
 
 Error Handling:
 
-* Plumber catches all errors - no more broken pipes
-* Native notifications for compile failures
-* Errors are logged to console
+* Plumber catches all errors - no more broken pipes!
+* Native notifications for compilation failures
+  * Errors are logged to console as well
 
 Watch:
 
