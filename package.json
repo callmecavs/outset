@@ -1,6 +1,6 @@
 {
   "name": "outset",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Gulp.",
   "author": "callmecavs",
   "license": "MIT",
