@@ -32,13 +32,13 @@ Get building! Work in the `src` folder, deploy from the `dist` folder. The `inde
 
 What matters: **IE9+**.
 
-Remove the IE conditional `<script>` in the `<head>` for IE10+.
+Display reset provided for HTML5 elements in IE9.
 
 ## Docs
 
 ### HTML
 
-Just an `index.html` file.  Shown here without the conditional IE script:
+Just an `index.html` file.
 
 ```html
 <!DOCTYPE html>
@@ -50,6 +50,7 @@ Just an `index.html` file.  Shown here without the conditional IE script:
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
