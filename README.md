@@ -7,17 +7,17 @@ Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built 
 ## Install
 
 ```bash
-$ [sudo] npm install outset -g
+$ npm install outset -g
 ```
 
 ## Use
 
-In your working directory:
+In your terminal:
 
 ```bash
-$ [sudo] outset
-$ [sudo] npm i
-$ [sudo] gulp
+$ outset [path]
+$ npm i
+$ gulp
 ```
 
 In your browser:

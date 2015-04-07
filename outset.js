@@ -4,7 +4,9 @@
 
 var fs = require('fs-extra');
 
-var CWD  = process.cwd();
+var path = process.argv[2] || '.';
+
+var CWD  = process.cwd() + '/' + path;
 var FROM = __dirname + '/lib';
 
 fs.copy(FROM, CWD, function(error) {
