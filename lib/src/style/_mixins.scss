@@ -1,6 +1,7 @@
 // MIXINS
 
 @mixin clearfix {
+  &::before,
   &::after {
     content: "";
     display: table;
