@@ -53,3 +53,7 @@
   @if $axis == "y" { transform: translate3d(0, $value, 0); }
   @if $axis == "z" { transform: translate3d(0, 0, $value); }
 }
+
+@mixin tracking($val, $base: 16px) {
+  letter-spacing: ($val / 1000) * $base;
+}
