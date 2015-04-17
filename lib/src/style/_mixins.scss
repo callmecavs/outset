@@ -53,3 +53,13 @@
   @if $axis == "y" { transform: translate3d(0, $value, 0); }
   @if $axis == "z" { transform: translate3d(0, 0, $value); }
 }
+
+// Converts pixels to rems
+@function rem($pxval, $base: 16) {
+  @return ($pxval / $base) * 1rem;
+}
+
+// Converts illustrator tracking values to rems
+@function tracking($tracking-size, $font-size: 16) {
+  @return rem( ($tracking-size/1000) * $font-size );
+}
