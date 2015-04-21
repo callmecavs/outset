@@ -3,11 +3,9 @@
 html, body, div,
 header, footer, main, section, nav,
 h1, h2, h3, h4, h5, h6, img, svg,
-p, a, hr, mark, span, strong, em, cite,
-ol, ul, li, dl, dt, dd,
+p, a, hr, span, ol, ul, li,
 form, input, label,
-video, audio, canvas, progress,
-pre, code {
+pre {
   margin: 0;
   padding: 0;
   border: none;
@@ -83,20 +81,9 @@ textarea {
 
 // code style
 
-pre,
-code {
+pre {
   overflow: auto;
   font-family: monospace;
-}
-
-// bold and italic
-
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
 }
 
 // anchor background and underline
@@ -104,11 +91,9 @@ em {
 a {
   background-color: transparent;
   text-decoration: none;
-}
 
-// anchor outline
-
-a:active,
-a:hover {
-  outline: none;
+  &:active,
+  &:hover {
+    outline: none;
+  }
 }
