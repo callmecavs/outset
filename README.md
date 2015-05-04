@@ -106,7 +106,7 @@ Tasks:
 * Minify HTML
 * Compile Sass (`compressed` output)
 * Autoprefixer to add vendor prefixes (browser string: `> 1%, last 2 versions, Explorer >= 9`)
-* Concatenate and uglify scripts
+* Transpile (using [Babel.js](https://babeljs.io/)), concatenate and uglify scripts
 * Optimize images: `gif`, `jpg`, `png`, and `svg`
 * Start local server on `port 3000`
 * LiveReload on change (no browser extension needed)
