@@ -77,20 +77,20 @@ Just a namespace to build in (that you should rename). No libraries!
 ```javascript
 'use strict';
 
-// constructor
+// CONSTRUCTOR
 
 function Outset(options) {
 
-  document.addEventListener('DOMContentLoaded', this.init(), false);
+  document.addEventListener('DOMContentLoaded', this.create.bind(this), false);
 }
 
-// methods
+// METHODS
 
-Outset.prototype.init = function() {
+Outset.prototype.create = function() {
 
 }
 
-// instance
+// INSTANCE
 
 var outset = new Outset({
 
