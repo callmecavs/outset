@@ -1,6 +1,6 @@
 # outset
 
-Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Gulp.
+Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
@@ -74,20 +74,19 @@ A custom reset, and mixins.
 
 Just a namespace to build in (that you should rename). No libraries!
 
+Outset supports future ES6/7 syntax via [Babel.js](https://babeljs.io/).
+
 ```javascript
 'use strict';
 
-// CONSTRUCTOR
+class Outset {
+  constructor( options ) {
+    document.addEventListener('DOMContentLoaded', this.create(), false);
+  }
 
-function Outset(options) {
+  create() {
 
-  document.addEventListener('DOMContentLoaded', this.create.bind(this), false);
-}
-
-// METHODS
-
-Outset.prototype.create = function() {
-
+  }
 }
 
 // INSTANCE
@@ -106,7 +105,7 @@ Tasks:
 * Minify HTML
 * Compile Sass (`compressed` output)
 * Autoprefixer to add vendor prefixes (browser string: `> 1%, last 2 versions, Explorer >= 9`)
-* Transpile (using [Babel.js](https://babeljs.io/)), concatenate and uglify scripts
+* Transpile, concatenate and uglify scripts
 * Optimize images: `gif`, `jpg`, `png`, and `svg`
 * Start local server on `port 3000`
 * LiveReload on change (no browser extension needed)
