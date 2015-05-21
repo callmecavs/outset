@@ -1,6 +1,6 @@
 # outset
 
-[![Outset on NPM](https://img.shields.io/npm/v/layzr.js.svg)](https://www.npmjs.com/package/outset)
+[![Outset on NPM](https://img.shields.io/npm/v/outset.svg)](https://www.npmjs.com/package/outset)
 
 Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.
 
