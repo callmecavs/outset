@@ -62,10 +62,10 @@ Just an `index.html` file.
 
 ### Sass
 
-A custom reset, and mixins.
+A custom reset, and simple mixins.
 
 * Configured for `rem` (`1rem` = `10px`)
-* Disable transforms and opacity in IE9
+* For IE9 specific styles, chain the `.ie9` class
 
 ### JS
 
