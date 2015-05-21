@@ -1,8 +1,8 @@
 # outset
 
-Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.
+[![Outset on NPM](https://img.shields.io/npm/v/layzr.js.svg)](https://www.npmjs.com/package/outset)
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.
 
 ## Install
 
@@ -116,3 +116,5 @@ Error Handling:
 Watch:
 
 * HTML, Sass, JS, and images
+
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
