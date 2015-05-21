@@ -54,9 +54,6 @@ Just an `index.html` file.
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="wrapper">
-
-    </div><!-- END wrapper -->
 
     <script src="scripts.js"></script>
   </body>
