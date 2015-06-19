@@ -1,23 +1,18 @@
+// VARIABLES
+
 // breakpoints
 
-// color vars
+// colors
 
-// font vars
+// fonts
 
-// mixins and reset
+// PARTIALS
 
 @import "mixins";
+
 @import "reset";
+@import "font";
 
-// IE9 specific
+// components
 
-@import "ie";
-
-body {
-  // font-family: ;
-  // font-weight: ;
-  // font-size: ;
-  line-height: 1.3;
-}
-
-// partials
+// sections

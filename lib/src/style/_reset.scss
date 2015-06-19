@@ -28,7 +28,7 @@ html {
   font-size: 10px;
 }
 
-// HTML5 display default in IE9
+// HTML5 display defaults
 
 article,
 aside,
@@ -66,11 +66,23 @@ ul {
   list-style: none;
 }
 
+// input border radius
+
+input {
+  border-radius: 0;
+}
+
 // textarea overflow
 
 textarea {
   overflow: auto;
   resize: vertical;
+}
+
+// placeholder opacity
+
+::placeholder {
+  opacity: 1;
 }
 
 // code style

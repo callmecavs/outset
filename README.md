@@ -30,9 +30,9 @@ Get building! Work in the `src` folder, deploy from the `dist` folder. The `inde
 
 ## Browser Support
 
-What matters: **IE9+**.
-
 Display reset provided for HTML5 elements in IE9.
+
+Note that this boilerplate **doesn't detect browsers or their features**.
 
 ## Docs
 
@@ -43,8 +43,7 @@ Just an `index.html` file.
 ```html
 <!DOCTYPE html>
 
-<!--[if IE 9]>         <html class="ie9" lang="en-US"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en-US">
   <head>
     <title></title>
     <meta charset="UTF-8">
@@ -62,10 +61,16 @@ Just an `index.html` file.
 
 ### Sass
 
-A custom reset, and simple mixins.
+A custom [reset](https://github.com/callmecavs/outset/blob/master/lib/src/style/_reset.scss):
 
 * Configured for `rem` (`1rem` = `10px`)
-* For IE9 specific styles, chain the `.ie9` class
+
+Simple [mixins](https://github.com/callmecavs/outset/blob/master/lib/src/style/_mixins.scss):
+
+* Clearfix
+* Media Query
+* Font Face
+* Image Replacement
 
 ### JS
 
@@ -76,9 +81,11 @@ Outset supports future ES6/7 syntax via [Babel.js](https://babeljs.io/).
 ```javascript
 'use strict';
 
+// CLASS
+
 class Outset {
-  constructor( options ) {
-    document.addEventListener('DOMContentLoaded', this.create(), false);
+  constructor() {
+    document.addEventListener('DOMContentLoaded', this.create.bind(this), false);
   }
 
   create() {
@@ -88,9 +95,7 @@ class Outset {
 
 // INSTANCE
 
-var outset = new Outset({
-
-});
+var outset = new Outset();
 ```
 
 ### Gulp

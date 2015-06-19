@@ -7,32 +7,6 @@
   }
 }
 
-@mixin font-face($font-name, $file-name, $font-weight: normal, $font-style: normal) {
-  @font-face {
-    font-family: $font-name;
-    src: url("fonts/#{$file-name}.eot");
-    src: url("fonts/#{$file-name}.eot?#iefix") format("embedded-opentype"),
-         url("fonts/#{$file-name}.woff2") format("woff2"),
-         url("fonts/#{$file-name}.woff") format("woff"),
-         url("fonts/#{$file-name}.ttf") format("truetype"),
-         url("fonts/#{$file-name}.svg#lineto-#{$file-name}") format("svg");
-    font-weight: $font-weight;
-    font-style: $font-style;
-  }
-}
-
-@mixin hide-text {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-}
-
-@mixin ls-centered($length) {
-  letter-spacing: $length;
-  text-indent: $length;
-  text-align: center;
-}
-
 @mixin mq-min($width) {
   @media screen and (min-width: $width) {
     @content;
@@ -45,13 +19,22 @@
   }
 }
 
-@mixin vertical-center($absolute: false) {
-  @if $absolute {
-    position: absolute;
-  } @else {
-    position: relative;
+@mixin font-face($font-name, $file-name, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url("fonts/#{$file-name}.eot");
+    src: url("fonts/#{$file-name}.eot?#iefix") format("embedded-opentype"),
+         url("fonts/#{$file-name}.woff2") format("woff2"),
+         url("fonts/#{$file-name}.woff") format("woff"),
+         url("fonts/#{$file-name}.ttf") format("truetype"),
+         url("fonts/#{$file-name}.svg#svg#{$file-name}") format("svg");
+    font-weight: $font-weight;
+    font-style: $font-style;
   }
+}
 
-  transform: translateY(-50%);
-  top: 50%;
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
