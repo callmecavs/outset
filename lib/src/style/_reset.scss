@@ -98,9 +98,5 @@ code {
 a {
   background-color: transparent;
   text-decoration: none;
-
-  &:active,
-  &:hover {
-    outline: none;
-  }
+  outline: none;
 }
