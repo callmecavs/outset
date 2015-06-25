@@ -85,7 +85,7 @@ textarea {
   opacity: 1;
 }
 
-// code style
+// code block style
 
 pre,
 code {
@@ -93,11 +93,11 @@ code {
   font-family: monospace;
 }
 
-// anchor background and underline
+// anchor background, underline, and outline
 
 a {
   background-color: transparent;
   text-decoration: none;
-  outline: none;
   color: inherit;
+  outline: none;
 }
