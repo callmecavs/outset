@@ -1,6 +1,6 @@
 {
   "name": "outset",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.",
   "author": "callmecavs",
   "license": "MIT",
@@ -15,13 +15,13 @@
     "outset": "outset.js"
   },
 
-  "homepage": "https://github.com/callmecavs/start",
+  "homepage": "https://github.com/callmecavs/outset",
   "repository": {
     "type": "git",
-    "url": "https://github.com/callmecavs/start.git"
+    "url": "https://github.com/callmecavs/outset.git"
   },
   "bugs": {
-    "url": "https://github.com/callmecavs/start/issues"
+    "url": "https://github.com/callmecavs/outset/issues"
   },
 
   "preferGlobal": true,
