@@ -7,16 +7,16 @@
   }
 }
 
-@mixin mq-min($width) {
+@mixin min($width) {
   @media screen and (min-width: $width) {
     @content;
   }
 }
 
-@mixin mq-max($width) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
 }
 
 @mixin font-face($font-name, $file-name, $font-weight: normal, $font-style: normal) {
@@ -31,10 +31,4 @@
     font-weight: $font-weight;
     font-style: $font-style;
   }
-}
-
-@mixin hide-text {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
 }
