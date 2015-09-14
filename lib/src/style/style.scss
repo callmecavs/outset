@@ -1,17 +1,13 @@
-// VARIABLES
-
-// breakpoints
-
-// colors
-
-// fonts
+@import "mixins";
+@import "reset";
 
 // PARTIALS
 
-@import "mixins";
+@import "vars";
 
-@import "reset";
 @import "font";
+@import "z-index";
+@import "layout";
 
 // components
 
