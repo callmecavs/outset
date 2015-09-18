@@ -2,7 +2,7 @@
 
 [![Outset on NPM](https://img.shields.io/npm/v/outset.svg)](https://www.npmjs.com/package/outset)
 
-Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Babel and Gulp.
+Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Browserify and Gulp.
 
 ## Install
 
@@ -12,7 +12,7 @@ $ npm install outset -g
 
 ## Use
 
-In your terminal:
+* In your terminal:
 
 ```bash
 $ outset [path]
@@ -20,19 +20,15 @@ $ npm i
 $ gulp
 ```
 
-In your browser:
+* In your browser:
 
 ```
 http://localhost:3000/
 ```
 
-Get building! Work in the `src` folder, deploy from the `dist` folder. The `index.html` file comes wired up.
+* In your editor:
 
-## Browser Support
-
-Display reset provided for HTML5 elements in IE9.
-
-Note that this boilerplate **doesn't detect browsers or their features**.
+Work from the `src` folder, deploy from the `dist` folder.
 
 ## Docs
 
@@ -54,49 +50,29 @@ Just an `index.html` file.
   </head>
   <body>
 
-    <script src="scripts.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
 ```
 
 ### Sass
 
-A custom [reset](https://github.com/callmecavs/outset/blob/master/lib/src/style/_reset.scss):
+A custom [reset](https://github.com/callmecavs/outset/blob/master/lib/src/sass/_reset.scss):
 
 * Configured for `rem` (`1rem` = `10px`)
 
-Simple [mixins](https://github.com/callmecavs/outset/blob/master/lib/src/style/_mixins.scss):
+A few simple [mixins](https://github.com/callmecavs/outset/blob/master/lib/src/sass/_mixins.scss):
 
 * Clearfix
 * Media Query
-* Font Face
 * Image Replacement
+* Font Face
 
 ### JS
 
-Just a namespace to build in (that you should rename). No libraries!
+Just an entry point to build around. No libraries!
 
-Outset supports future ES6/7 syntax via [Babel.js](https://babeljs.io/).
-
-```javascript
-'use strict';
-
-// CLASS
-
-class Outset {
-  constructor() {
-    document.addEventListener('DOMContentLoaded', this.create.bind(this), false);
-  }
-
-  create() {
-
-  }
-}
-
-// INSTANCE
-
-var outset = new Outset();
-```
+Outset **supports ES6/7** syntax via [Babel.js](https://babeljs.io/), and **bundles modules** via [browserify/watchify](https://github.com/substack/node-browserify).
 
 ### Gulp
 
@@ -104,22 +80,21 @@ Never refresh again!
 
 Tasks:
 
-* Minify HTML
-* Compile Sass (`compressed` output)
-* Autoprefixer to add vendor prefixes (browser string: `> 1%, last 2 versions, Explorer >= 9`)
-* Transpile, concatenate and uglify scripts
-* Optimize images: `gif`, `jpg`, `png`, and `svg`
-* Start local server on `port 3000`
-* LiveReload on change (no browser extension needed)
+* [HTML](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L35-L43) - minify
+* [Sass](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L45-L57) - compile, autoprefix, minify, sourcemaps
+* [JS](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L59-L88) - transpile, bundle, minify, sourcemaps
+* [Images](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L90-L99) - minify
+* [Fonts](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L101-L106)
+* [Server](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L108-L132) - auto refresh, serve sourcemaps
+* [Watch](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L134-L140)
 
 Error Handling:
 
-* Plumber catches all errors - no more broken pipes!
-* Native notifications for compilation failures
-  * Errors are logged to console as well
+* No more broken pipes! `gulp-plumber` catches all errors.
+* Error handler emits native system notification and logs to console.
 
-Watch:
+### Browser Support
 
-* HTML, Sass, JS, and images
+Note that this boilerplate **doesn't detect browsers or their features**.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
