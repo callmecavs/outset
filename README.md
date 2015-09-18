@@ -12,7 +12,7 @@ $ npm install outset -g
 
 ## Use
 
-* In your terminal:
+In your terminal:
 
 ```bash
 $ outset [path]
@@ -20,13 +20,11 @@ $ npm i
 $ gulp
 ```
 
-* In your browser:
+In your browser:
 
 ```
 http://localhost:3000/
 ```
-
-* In your editor:
 
 Work from the `src` folder, deploy from the `dist` folder.
 
