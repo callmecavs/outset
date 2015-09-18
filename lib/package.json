@@ -6,17 +6,25 @@
   "license": "",
 
   "devDependencies": {
-    "gulp":              "*",
-    "gulp-autoprefixer": "*",
-    "gulp-babel":        "*",
-    "gulp-concat":       "*",
-    "gulp-connect":      "*",
-    "gulp-htmlmin":      "*",
-    "gulp-imagemin":     "*",
-    "gulp-load-plugins": "*",
-    "gulp-plumber":      "*",
-    "gulp-sass":         "*",
-    "gulp-uglify":       "*",
-    "node-notifier":     "*"
+    "babel":               "*",
+    "babelify":            "*",
+    "browserify":          "*",
+    "gulp":                "*",
+    "gulp-autoprefixer":   "*",
+    "gulp-changed":        "*",
+    "gulp-concat":         "*",
+    "gulp-connect":        "*",
+    "gulp-htmlmin":        "*",
+    "gulp-imagemin":       "*",
+    "gulp-minify-css":     "*",
+    "gulp-plumber":        "*",
+    "gulp-sass":           "*",
+    "gulp-sourcemaps":     "*",
+    "gulp-uglify":         "*",
+    "lodash.assign":       "*",
+    "node-notifier":       "*",
+    "vinyl-buffer":        "*",
+    "vinyl-source-stream": "*",
+    "watchify":            "*"
   }
 }
