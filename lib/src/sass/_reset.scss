@@ -1,11 +1,8 @@
-// defaults
-
 html, body, div,
 header, footer, main, section, nav,
 h1, h2, h3, h4, h5, h6, img, svg,
 p, a, hr, span, ol, ul, li,
-form, input, label,
-pre, code {
+form, input, label {
   margin: 0;
   padding: 0;
   border: none;
@@ -14,90 +11,41 @@ pre, code {
   vertical-align: baseline;
 }
 
-// box-sizing
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-// rems to px (1rem = 10px)
-
 html {
+  // 1rem = 10px
   font-size: 10px;
 }
 
-// HTML5 display defaults
-
-article,
-aside,
-figure,
-footer,
-header,
-main,
-nav,
-section {
-  display: block;
-}
-
-// hidden attribute
-
-[hidden] {
-  display: none;
-}
-
-// image responsiveness
-
-img {
+img,
+video,
+iframe {
   max-width: 100%;
 }
-
-// svg overflow
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-// list style
-
-ol,
-ul {
-  list-style: none;
-}
-
-// input border radius
-
 input {
   border-radius: 0;
 }
-
-// textarea overflow
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-// placeholder opacity
 
 ::placeholder {
   opacity: 1;
 }
 
-// code block style
-
-pre,
-code {
-  overflow: auto;
-  font-family: monospace;
-}
-
-// anchor background, underline, and outline
-
 a {
   background-color: transparent;
+
   text-decoration: none;
   color: inherit;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
 }
