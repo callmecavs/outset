@@ -78,13 +78,13 @@ Never refresh again!
 
 Tasks:
 
-* [HTML](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L34-L42) - minify
-* [Sass](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L44-L56) - compile, autoprefix, minify, sourcemaps
-* [JS](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L58-L87) - transpile, bundle, minify, sourcemaps
-* [Images](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L89-L98) - minify
-* [Fonts](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L100-L105)
-* [Server](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L107-L131) - auto refresh, serve sourcemaps
-* [Watch](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L133-L139)
+* [HTML](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L34-L42) - minify
+* [Sass](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L44-L56) - compile, autoprefix, minify, sourcemaps
+* [JS](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L58-L87) - transpile, bundle, minify, sourcemaps
+* [Images](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L89-L98) - minify
+* [Fonts](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L100-L105)
+* [Server](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L107-L131) - auto refresh, serve sourcemaps
+* [Watch](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L133-L139)
 
 Error Handling:
 
