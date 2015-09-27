@@ -12,7 +12,6 @@
     "gulp":                "*",
     "gulp-autoprefixer":   "*",
     "gulp-changed":        "*",
-    "gulp-concat":         "*",
     "gulp-connect":        "*",
     "gulp-htmlmin":        "*",
     "gulp-imagemin":       "*",

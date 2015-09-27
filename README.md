@@ -78,21 +78,21 @@ Never refresh again!
 
 Tasks:
 
-* [HTML](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L35-L43) - minify
-* [Sass](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L45-L57) - compile, autoprefix, minify, sourcemaps
-* [JS](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L59-L88) - transpile, bundle, minify, sourcemaps
-* [Images](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L90-L99) - minify
-* [Fonts](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L101-L106)
-* [Server](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L108-L132) - auto refresh, serve sourcemaps
-* [Watch](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L134-L140)
+* [HTML](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L34-L42) - minify
+* [Sass](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L44-L56) - compile, autoprefix, minify, sourcemaps
+* [JS](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L58-L87) - transpile, bundle, minify, sourcemaps
+* [Images](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L89-L98) - minify
+* [Fonts](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L100-L105)
+* [Server](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L107-L131) - auto refresh, serve sourcemaps
+* [Watch](https://github.com/callmecavs/outset/blob/v3.0.0/lib/gulpfile.babel.js#L133-L139)
 
 Error Handling:
 
 * No more broken pipes! `gulp-plumber` catches all errors.
-* Error handler emits native system notification and logs to console.
+* Error handler emits native system notification and logs to terminal.
 
 ### Browser Support
 
-Note that this boilerplate **doesn't detect browsers or their features**.
+Targeting evergreen browsers and **IE10+**. Note that this boilerplate **doesn't detect browsers or their features**.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
