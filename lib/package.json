@@ -7,6 +7,7 @@
 
   "devDependencies": {
     "babel":               "*",
+    "babel-preset-es2015": "*",
     "babelify":            "*",
     "browserify":          "*",
     "gulp":                "*",
