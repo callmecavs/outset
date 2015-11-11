@@ -55,7 +55,7 @@ A minimal `index.html` file, with CSS and JS loaded.
 
 #### Includes
 
-You can import HTML files into other HTML files, without dependence on any particular templating engine:
+You can import HTML files into other HTML files - without dependence on a templating engine - using the following syntax:
 
 ```html
 @include('relative/path.html')
