@@ -105,6 +105,8 @@ Error Handling:
 
 ### Browser Support
 
-Targeting evergreen browsers and **IE10+**. Note that this boilerplate **doesn't detect browsers or their features**.
+Targeting evergreen browsers and **IE10+**.
+
+Note that this boilerplate **doesn't detect browsers or their features**.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
