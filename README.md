@@ -26,7 +26,7 @@ In your browser:
 http://localhost:3000/
 ```
 
-Work from the `src` folder, deploy from the `dist` folder.
+Work in the `src` folder, deploy from the `dist` folder.
 
 ## Docs
 
@@ -53,13 +53,13 @@ A minimal `index.html` file, with CSS and JS loaded.
 </html>
 ```
 
-Note that using the following syntax, you can import HTML files into other HTML files:
+#### Includes
+
+You can import HTML files into other HTML files, without dependence on any particular templating engine:
 
 ```html
 @include('relative/path.html')
 ```
-
-This does not depend on any particular templating engine!
 
 ### Sass
 
