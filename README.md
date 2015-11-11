@@ -32,7 +32,7 @@ Work from the `src` folder, deploy from the `dist` folder.
 
 ### HTML
 
-Just an `index.html` file.
+A minimal `index.html` file, with CSS and JS loaded.
 
 ```html
 <!DOCTYPE html>
@@ -53,18 +53,30 @@ Just an `index.html` file.
 </html>
 ```
 
+Note that using the following syntax, you can import HTML files into other HTML files:
+
+```html
+@include('relative/path.html')
+```
+
+This does not depend on any particular templating engine!
+
 ### Sass
 
-A custom [reset](https://github.com/callmecavs/outset/blob/master/lib/src/sass/_reset.scss):
+A minimal set of partials for building modular, reusable components.
 
-* Configured for `rem` (`1rem` = `10px`)
-
-A few simple [mixins](https://github.com/callmecavs/outset/blob/master/lib/src/sass/_mixins.scss):
-
-* Clearfix
-* Media Query
-* Image Replacement
-* Font Face
+```
+sass/
+├── components/
+│   ├── _keyframes.scss       // empty partial, for storing reusable @keyframe animations
+├── _font.scss                // html font size declaration, skeleton for body font styles
+├── _layout.scss              // container style
+├── _mixins.scss              // custom mixins - clearfix, media query, image replacement, and @font-face
+├── _reset.scss               // custom, minimal reset
+├── _vars.scss                // central variable file
+├── _z-index.scss             // central z-index file
+└── style.scss                // all @imports
+```
 
 ### JS
 
@@ -78,7 +90,7 @@ Never refresh again!
 
 Tasks:
 
-* [HTML](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L34-L42) - minify
+* [HTML](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L34-L42) - file include, minify
 * [Sass](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L44-L56) - compile, autoprefix, minify, sourcemaps
 * [JS](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L58-L87) - transpile, bundle, minify, sourcemaps
 * [Images](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L89-L98) - minify
