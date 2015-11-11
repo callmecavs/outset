@@ -55,10 +55,11 @@ A minimal `index.html` file, with CSS and JS loaded.
 
 #### Includes
 
-You can import HTML files into other HTML files - without dependence on a templating engine - using the following syntax:
+You can import files into HTML files - without dependence on a templating engine - using the following syntax:
 
 ```html
 @include('relative/path.html')
+@include('relative/path.svg')
 ```
 
 ### Sass
