@@ -14,6 +14,7 @@
     "gulp-autoprefixer":   "*",
     "gulp-changed":        "*",
     "gulp-connect":        "*",
+    "gulp-file-include":   "*",
     "gulp-htmlmin":        "*",
     "gulp-imagemin":       "*",
     "gulp-minify-css":     "*",
