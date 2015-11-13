@@ -1,6 +1,6 @@
 {
   "name": "outset",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Browserify and Gulp.",
   "homepage": "https://github.com/callmecavs/outset",
 

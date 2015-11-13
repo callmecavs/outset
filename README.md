@@ -58,9 +58,11 @@ A minimal `index.html` file, with CSS and JS loaded.
 You can import files into HTML files - without dependence on a templating engine - using the following syntax:
 
 ```html
-@include('relative/path.html')
-@include('relative/path.svg')
+@include('path/to.html')
+@include('path/to.svg')
 ```
+
+Note that paths are relative to the `src` folder.
 
 ### Sass
 
