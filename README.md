@@ -93,13 +93,13 @@ Never refresh again!
 
 Tasks:
 
-* [HTML](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L35-L44) - file include, minify
-* [Sass](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L46-L58) - compile, autoprefix, minify, sourcemaps
-* [JS](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L60-L89) - transpile, bundle, minify, sourcemaps
-* [Images](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L91-L100) - minify
-* [Fonts](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L102-L107)
-* [Server](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L109-L133) - auto refresh, serve sourcemaps
-* [Watch](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L135-L141)
+* HTML - file include, minify
+* Sass - compile, autoprefix, minify, sourcemaps
+* JS - transpile, bundle, minify, sourcemaps
+* Images - minify
+* Videos, Fonts, Favicon - move to deployment folder
+* Server - auto refresh, serve sourcemaps
+* Watch
 
 Error Handling:
 
