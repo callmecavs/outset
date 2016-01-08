@@ -62,7 +62,7 @@ You can import files into HTML files - without dependence on a templating engine
 @include('path/to.svg')
 ```
 
-Note that paths are relative to the `src` folder.
+Note that paths are relative to the `dist` folder, and as such have already run through the appropriate Gulp tasks.
 
 ### Sass
 
