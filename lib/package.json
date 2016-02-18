@@ -21,6 +21,7 @@
     "node-notifier":              "*",
     "postcss-scss":               "*",
     "rollup":                     "*",
-    "rollup-plugin-babel":        "*"
+    "rollup-plugin-babel":        "*",
+    "rollup-plugin-uglify":       "*"
   }
 }
