@@ -1,17 +1,16 @@
 #!/usr/bin/env node
 
-'use strict';
+'use strict'
 
-var fs = require('fs-extra');
+const fs = require('fs-extra')
 
-var path = process.argv[2] || '.';
+const path = process.argv[2] || '.'
 
-var CWD  = process.cwd() + '/' + path;
-var FROM = __dirname + '/lib';
+const TO   = `${ process.cwd() }/${ path }`
+const FROM = `${ __dirname }/lib`
 
-fs.copy(FROM, CWD, function(error) {
-  if(error) console.log(error);
+fs.copy(FROM, TO, (error) => {
+  if(error) return console.log(error)
 
-  // rename .gitignore
-  fs.renameSync(CWD + '/gitignore', CWD + '/.gitignore');
-});
+  fs.renameSync(TO + '/gitignore', TO + '/.gitignore')
+})

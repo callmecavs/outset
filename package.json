@@ -1,10 +1,10 @@
 {
-  "name": "outset",
-  "version": "3.3.2",
+  "name":        "outset",
+  "version":     "4.0.0",
   "description": "Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Browserify and Gulp.",
-  "homepage": "https://github.com/callmecavs/outset",
+  "homepage":    "https://github.com/callmecavs/outset",
 
-  "author": "callmecavs",
+  "author":  "Michael Cavalea",
   "license": "MIT",
 
   "bin": {
@@ -13,7 +13,7 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/callmecavs/outset.git"
+    "url":  "https://github.com/callmecavs/outset.git"
   },
   "bugs": {
     "url": "https://github.com/callmecavs/outset/issues"
@@ -28,6 +28,6 @@
   "preferGlobal": true,
 
   "dependencies": {
-    "fs-extra": "^0.14.0"
+    "fs-extra": "^0.26.5"
   }
 }
