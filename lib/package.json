@@ -17,10 +17,10 @@
     "gulp-imagemin":              "*",
     "gulp-plumber":               "*",
     "gulp-postcss":               "*",
-    "gulp-rollup":                "*",
     "gulp-sourcemaps":            "*",
     "node-notifier":              "*",
     "postcss-scss":               "*",
+    "rollup":                     "*",
     "rollup-plugin-babel":        "*"
   }
 }
