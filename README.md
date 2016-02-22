@@ -16,8 +16,7 @@ In your terminal:
 
 ```bash
 $ outset [path]
-$ npm i
-$ gulp
+$ npm start
 ```
 
 In your browser:
