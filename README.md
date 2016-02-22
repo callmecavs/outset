@@ -33,11 +33,12 @@ $ npm install outset -g
 In your terminal:
 
 ```bash
-# the path argument is optional - if not provided, files will be copied to the CWD
-# 'npm start' will version and install the devDependencies, then run the default Gulp task
+# the path argument is optional
+# if not provided, files will be copied to the CWD
 
 $ outset [path]
-$ npm start
+$ npm i
+$ gulp
 ```
 
 In your browser:
@@ -47,6 +48,16 @@ http://localhost:3000/
 ```
 
 Work in the `src` folder, deploy from the `dist` folder.
+
+## devDependencies
+
+For the sake of easier maintenance, devDependency versions are not, and never will be, locked. Outset will always install the latest versions: `*`.
+
+To lock them, after copying the file set, simply run:
+
+```bash
+$ npm update --save-dev
+```
 
 ## Browser Support
 
