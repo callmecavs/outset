@@ -2,7 +2,7 @@
 
 [![Outset on NPM](https://img.shields.io/npm/v/outset.svg?style=flat-square)](https://www.npmjs.com/package/outset)
 
-Minimal, unassuming, front-end foundation. Configured for HTML5 and Sass, built with Browserify and Gulp.
+A minimal frontend boilerplate. Powered by Sass, Rollup and Gulp.
 
 ## Install
 
