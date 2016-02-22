@@ -64,16 +64,15 @@ A minimal `index.html` file, with CSS and JS loaded.
 </html>
 ```
 
-#### Includes
+#### Inline SVGs
 
-You can import files into HTML files - without dependence on a templating engine - using the following syntax:
+You can inline SVGs in your HTML using the following syntax:
 
 ```html
-@include('path/to.html')
-@include('path/to.svg')
+@include("path/to/image.svg")
 ```
 
-Note that paths are relative to the `dist` folder, and as such have already run through the appropriate Gulp tasks.
+The inlined SVG has already run through the Gulp images task, and the path is relative to the `dist/images` folder.
 
 ### Sass
 
