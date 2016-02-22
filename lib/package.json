@@ -5,10 +5,6 @@
   "author": "",
   "license": "",
 
-  "scripts": {
-    "start": "npm update --save-dev && gulp"
-  },
-
   "devDependencies": {
     "autoprefixer":               "*",
     "babel-preset-es2015-rollup": "*",
