@@ -14,9 +14,11 @@ Follow these steps:
 
 ## About
 
-Outset is **a workflow more than it is a framework.** It aims to exist in the background, not the spotlight.
+Outset is **a workflow moreso than it is a framework.** It aims to exist in the background, not the spotlight.
 
-All the magic happens in the [`gulpfile`](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.js). The actual HTML/CSS/JS provides some useful but minimal boilerplate. It eliminates a number of annoyances, while making very few assumptions. It is developed and maintained with the intention of being the solution to writing code frontend code instantly, without worrying about configuring a build system.
+All the magic happens in the [`gulpfile`](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.js). The actual HTML/CSS/JS [code](https://github.com/callmecavs/outset/tree/master/lib/src) provides some useful but minimal boilerplate. A more detailed explanation of both can be found [here](https://github.com/callmecavs/outset/blob/master/DETAIL.md).
+
+Outset eliminates a number of annoyances, while making very few assumptions. It is developed with the intention of being the solution to writing code frontend code instantly, without worrying about setup, or configuring a build system.
 
 ## Install
 
