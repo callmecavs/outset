@@ -1,7 +1,7 @@
 {
   "name":        "outset",
   "version":     "4.0.0",
-  "description": "A minimal frontend boilerplate. Powered by Sass, Rollup and Gulp.",
+  "description": "A minimal frontend boilerplate, emphasizing workflow.",
   "homepage":    "https://github.com/callmecavs/outset",
 
   "author":  "Michael Cavalea",

@@ -2,7 +2,7 @@
 
 [![Outset on NPM](https://img.shields.io/npm/v/outset.svg?style=flat-square)](https://www.npmjs.com/package/outset)
 
-A minimal frontend boilerplate. Powered by Sass, Rollup and Gulp.
+A minimal frontend boilerplate, emphasizing workflow.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ In your terminal:
 
 ```bash
 # the path argument is optional - if not provided, files will be copied to the CWD
-# 'npm start' will version the devDependencies, and run the default Gulp task
+# 'npm start' will version and install the devDependencies, then run the default Gulp task
 
 $ outset [path]
 $ npm start
