@@ -10,6 +10,7 @@
     "babel-preset-es2015-rollup": "*",
     "browser-sync":               "*",
     "cssnano":                    "*",
+    "del":                        "*",
     "gulp":                       "*",
     "gulp-changed":               "*",
     "gulp-file-include":          "*",
