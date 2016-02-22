@@ -43,7 +43,7 @@ Work in the `src` folder, deploy from the `dist` folder.
 
 ### HTML
 
-A minimal `index.html` file, with CSS and JS loaded.
+Simply an `index.html` file.
 
 ```html
 <!DOCTYPE html>
@@ -76,12 +76,12 @@ The inlined SVG has already run through the Gulp images task, and the path is re
 
 ### Sass
 
-A minimal set of partials for building modular, reusable components.
+A minimal set of partials.
 
 ```
 sass/
 ├── _base.scss                // global font and container styles
-├── _mixins.scss              // Sass mixins - clearfix, flex, @font-face, image replacement, and min-width media query
+├── _mixins.scss              // mixins - clearfix, flex, @font-face, image replacement, min-width media query
 ├── _reset.scss               // custom, minimal reset
 ├── _vars.scss                // central variable file
 ├── _z-index.scss             // central z-index file
@@ -92,7 +92,7 @@ sass/
 
 Just an entry point to build around. No libraries!
 
-Outset **supports ES6/7** syntax via [Babel.js](https://babeljs.io/), and **bundles modules** via [browserify/watchify](https://github.com/substack/node-browserify).
+Outset **supports ES6/7** syntax via [Babel.js](https://babeljs.io/), and **bundles modules (the futuristic, tree-shaking way)** via [Rollup](https://github.com/rollup/rollup).
 
 ### Gulp
 
@@ -100,11 +100,11 @@ Never refresh again!
 
 Tasks:
 
-* HTML - file include, minify
+* HTML - inline SVGs, minify
 * Sass - compile, autoprefix, minify, sourcemaps
 * JS - transpile, bundle, minify, sourcemaps
 * Images - minify
-* Videos, Fonts, Favicon - move to deployment folder
+* Fonts, Videos, Favicon - move to deployment folder
 * Server - auto refresh, serve sourcemaps
 * Watch
 
@@ -119,4 +119,4 @@ Targeting evergreen browsers and **IE10+**.
 
 Note that this boilerplate **doesn't detect browsers or their features**.
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![Built With Love](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
