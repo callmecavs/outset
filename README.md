@@ -81,11 +81,8 @@ A minimal set of partials for building modular, reusable components.
 
 ```
 sass/
-├── components/
-│   ├── _keyframes.scss       // empty partial, for storing reusable @keyframe animations
-├── _font.scss                // html font size declaration, skeleton for body font styles
-├── _layout.scss              // container style
-├── _mixins.scss              // custom mixins - clearfix, media query, image replacement, and @font-face
+├── _base.scss                // global font and container styles
+├── _mixins.scss              // Sass mixins - clearfix, flex, @font-face, image replacement, and min-width media query
 ├── _reset.scss               // custom, minimal reset
 ├── _vars.scss                // central variable file
 ├── _z-index.scss             // central z-index file
