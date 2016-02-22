@@ -21,17 +21,21 @@ $ npm install outset -g
 
 ## Use
 
-In your terminal, run the following:
+In your terminal:
 
 ```bash
+# the path argument is optional - if not provided, files will be copied to the CWD
+# 'npm start' will version the devDependencies, and run the default Gulp task
+
 $ outset [path]
 $ npm start
 ```
 
-Note the following:
+In your browser:
 
-* The **path argument is optional** (if not provided, files will be copied to the CWD)
-* The `npm start` command will **version the devDependencies, and run the default Gulp task**
+```
+http://localhost:3000/
+```
 
 Work in the `src` folder, deploy from the `dist` folder.
 
