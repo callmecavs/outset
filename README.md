@@ -4,7 +4,16 @@
 
 A minimal frontend boilerplate. Powered by Sass, Rollup and Gulp.
 
+## Getting Started
+
+Follow these steps:
+
+1. [Install](#install)
+2. [Use](#use)
+
 ## Install
+
+Using NPM, install outset globally.
 
 ```bash
 $ npm install outset -g
@@ -12,18 +21,17 @@ $ npm install outset -g
 
 ## Use
 
-In your terminal:
+In your terminal, run the following:
 
 ```bash
 $ outset [path]
 $ npm start
 ```
 
-In your browser:
+Note the following:
 
-```
-http://localhost:3000/
-```
+* The **path argument is optional** (if not provided, files will be copied to the CWD)
+* The `npm start` command will **version the devDependencies, and run the default Gulp task**
 
 Work in the `src` folder, deploy from the `dist` folder.
 
