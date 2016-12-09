@@ -7,12 +7,6 @@
   }
 }
 
-@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
-  flex-grow: $grow;
-  flex-shrink: $shrink;
-  flex-basis: $basis;
-}
-
 @mixin font-face($font-name, $file-name) {
   @font-face {
     font-family: $font-name;
