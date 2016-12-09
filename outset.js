@@ -4,13 +4,15 @@
 
 const fs = require('fs-extra')
 
-const path = process.argv[2] || '.'
+const arg = process.argv[2] || '.'
 
-const FROM = `${ __dirname }/template`
-const TO   = `${ process.cwd() }/${ path }`
+const TEMPLATE = `${ __dirname }/template`
+const TO       = `${ process.cwd() }/${ arg }`
 
-fs.copy(FROM, TO, (error) => {
-  if(error) return console.log(error)
+fs.copy(TEMPLATE, TO, error => {
+  if(error) {
+    return console.log(error)
+  }
 
-  fs.renameSync(TO + '/gitignore', TO + '/.gitignore')
+  fs.renameSync(`${ TO }/gitignore`, `${ TO }/.gitignore`)
 })
