@@ -8,7 +8,7 @@ A minimal frontend boilerplate, emphasizing workflow.
 
 Outset is **a workflow moreso than it is a framework.** It aims to exist in the background, not the spotlight.
 
-All the magic happens in the [`gulpfile`](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.js). The actual HTML/CSS/JS [code](https://github.com/callmecavs/outset/tree/master/lib/src) provides some useful but minimal boilerplate. A more detailed explanation of both can be found [here](https://github.com/callmecavs/outset/blob/master/DETAIL.md).
+All the magic happens in the [`gulpfile`](https://github.com/callmecavs/outset/blob/master/template/gulpfile.js). The actual HTML/CSS/JS [code](https://github.com/callmecavs/outset/tree/master/template/src) provides some useful but minimal boilerplate. A more detailed explanation of both can be found [here](https://github.com/callmecavs/outset/blob/master/DETAIL.md).
 
 Outset eliminates a number of annoyances, while making very few assumptions. It is developed with the intention of being the solution to writing frontend code instantly, without worrying about setup, or configuring a build system.
 
@@ -16,7 +16,7 @@ Outset eliminates a number of annoyances, while making very few assumptions. It 
 
 In your terminal:
 
-```bash
+```shell
 # using node and npm
 # install outset globally
 
@@ -32,7 +32,7 @@ $ gulp
 
 In your browser:
 
-```
+```shell
 http://localhost:3000/
 ```
 
