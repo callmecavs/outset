@@ -49,16 +49,6 @@ http://localhost:3000/
 
 Work in the `src` folder, deploy from the `dist` folder.
 
-## devDependencies
-
-For the sake of easier maintenance, devDependency versions are not, and never will be, locked. Outset will always install the latest versions: `*`.
-
-To lock them, after copying the file set, simply run:
-
-```bash
-$ npm update --save-dev
-```
-
 ## Browser Support
 
 Targeting evergreen browsers and **IE10+**.

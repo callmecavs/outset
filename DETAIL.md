@@ -68,4 +68,4 @@ Tasks:
 Error Handling:
 
 * No more broken pipes! `gulp-plumber` catches all errors.
-* [Error handler](https://github.com/callmecavs/outset/blob/master/lib/gulpfile.babel.js#L23-L33) emits native system notification and logs to terminal.
+* Error handler emits native system notification and logs to terminal.
