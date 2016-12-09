@@ -4,14 +4,6 @@
 
 A minimal frontend boilerplate, emphasizing workflow.
 
-## Getting Started
-
-Follow these steps:
-
-1. [Read](#about)
-2. [Install](#install)
-3. [Use](#use)
-
 ## About
 
 Outset is **a workflow moreso than it is a framework.** It aims to exist in the background, not the spotlight.
@@ -20,21 +12,18 @@ All the magic happens in the [`gulpfile`](https://github.com/callmecavs/outset/b
 
 Outset eliminates a number of annoyances, while making very few assumptions. It is developed with the intention of being the solution to writing frontend code instantly, without worrying about setup, or configuring a build system.
 
-## Install
-
-Using NPM, install outset globally.
-
-```bash
-$ npm install outset -g
-```
-
-## Use
+## Getting Started
 
 In your terminal:
 
 ```bash
-# the path argument is optional
-# if not provided, files will be copied to the CWD
+# using node and npm
+# install outset globally
+
+$ npm install outset -g
+
+# use the outset command from the CLI to scaffold a project
+# template files are copied to the CWD, unless a path is specified
 
 $ outset [path]
 $ npm i

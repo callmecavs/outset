@@ -6,7 +6,7 @@ const fs = require('fs-extra')
 
 const path = process.argv[2] || '.'
 
-const FROM = `${ __dirname }/lib`
+const FROM = `${ __dirname }/template`
 const TO   = `${ process.cwd() }/${ path }`
 
 fs.copy(FROM, TO, (error) => {
