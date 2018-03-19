@@ -67,8 +67,10 @@ gulp.task('sass', () => {
 // js
 
 const read = {
-  entry: 'src/js/main.js',
-  sourceMap: true,
+  input: 'src/js/main.js',
+  output: {
+    sourcemap: true
+  },
   plugins: [
     resolve({ jsnext: true, main: true }),
     commonjs(),
@@ -79,21 +81,19 @@ const read = {
 
 const write = {
   format: 'iife',
-  sourceMap: true
+  sourcemap: true
 }
 
-gulp.task('js', () => {
-  return rollup
-    .rollup(read)
-    .then(bundle => {
-      // generate the bundle
-      const files = bundle.generate(write)
+gulp.task('js', async function () {
+  const bundle = await rollup.rollup(read);
 
-      // write the files to dist
-      fs.writeFileSync('dist/bundle.js', files.code)
-      fs.writeFileSync('dist/maps/bundle.js.map', files.map.toString())
-    })
-})
+  await bundle.write({
+    file: 'dist/bundle.js',
+    format: 'iife',
+    sourcemap: true
+  });
+});
+
 
 // images
 
