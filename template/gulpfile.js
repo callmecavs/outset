@@ -80,18 +80,18 @@ const read = {
 }
 
 const write = {
+  file: 'dist/bundle.js',
   format: 'iife',
-  sourcemap: true
+  sourcemap: true,
+  output: {
+    name: 'bundle'
+  }
 }
 
 gulp.task('js', async function () {
   const bundle = await rollup.rollup(read);
 
-  await bundle.write({
-    file: 'dist/bundle.js',
-    format: 'iife',
-    sourcemap: true
-  });
+  await bundle.write(write);
 });
 
 
