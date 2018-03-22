@@ -41,7 +41,7 @@ gulp.task('clean', () => del('dist'))
 gulp.task('html', ['images'], () => {
   return gulp.src('src/html/**/*.html')
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(include({ prefix: '@', basepath: 'dist/images/' }))
+    .pipe(include({ prefix: '@', basepath: 'src/' }))
     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest('dist'))
 })
@@ -74,7 +74,22 @@ const read = {
   plugins: [
     resolve({ jsnext: true, main: true }),
     commonjs(),
-    babel({ exclude: 'node_modules/**' }),
+    babel({ 
+      babelrc: false,
+      presets: [
+        [
+          '@babel/preset-env', {
+            modules: false,
+            targets: {
+              browsers: ['last 2 versions']
+            }
+          }
+        ]
+      ],
+      plugins: [
+        
+      ]
+    }),
     uglify()
   ]
 }
