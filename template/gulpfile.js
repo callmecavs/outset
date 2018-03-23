@@ -19,6 +19,8 @@ const commonjs = require('rollup-plugin-commonjs')
 const resolve  = require('rollup-plugin-node-resolve')
 const uglify   = require('rollup-plugin-uglify')
 const rucksack = require('rucksack-css')
+const size = require('gulp-size')
+const filesize = require('rollup-plugin-filesize')
 
 // error handler
 
@@ -36,6 +38,13 @@ const onError = function(error) {
 
 gulp.task('clean', () => del('dist'))
 
+// sizes
+const sizes = {
+  gzip: false ,
+  pretty: true,
+  showFiles: true
+}
+
 // html
 
 gulp.task('html', ['images'], () => {
@@ -43,6 +52,7 @@ gulp.task('html', ['images'], () => {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(include({ prefix: '@', basepath: 'src/' }))
     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+    .pipe(size(sizes))
     .pipe(gulp.dest('dist'))
 })
 
@@ -60,6 +70,7 @@ gulp.task('sass', () => {
     .pipe(maps.init())
     .pipe(sass())
     .pipe(postcss(processors))
+    .pipe(size(sizes))
     .pipe(maps.write('./maps', { addComment: false }))
     .pipe(gulp.dest('dist'))
 })
@@ -90,7 +101,8 @@ const read = {
         
       ]
     }),
-    uglify()
+    uglify(), 
+    filesize()
   ]
 }
 
@@ -117,6 +129,7 @@ gulp.task('images', () => {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(changed('dist/images'))
     .pipe(imagemin({ progressive: true, interlaced: true }))
+    .pipe(size(sizes))
     .pipe(gulp.dest('dist/images'))
 })
 
