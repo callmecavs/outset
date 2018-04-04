@@ -2,7 +2,7 @@
   "name":        "outset",
   "description": "A minimal frontend boilerplate, emphasizing workflow.",
 
-  "version": "4.1.1",
+  "version": "4.2.0",
   "license": "MIT",
 
   "repository": "callmecavs/outset",
