@@ -86,7 +86,7 @@ const read = {
   plugins: [
     resolve({ jsnext: true, main: true }),
     commonjs(),
-    babel({ 
+    babel({
       babelrc: false,
       presets: [
         [
@@ -99,10 +99,10 @@ const read = {
         ]
       ],
       plugins: [
-        
+
       ]
     }),
-    uglify(), 
+    uglify(),
     filesize()
   ]
 }
