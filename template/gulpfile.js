@@ -11,16 +11,16 @@ const imagemin = require('gulp-imagemin')
 const plumber  = require('gulp-plumber')
 const postcss  = require('gulp-postcss')
 const sass     = require('gulp-sass')
+const size     = require('gulp-size')
 const maps     = require('gulp-sourcemaps')
 const notifier = require('node-notifier')
 const rollup   = require('rollup')
 const babel    = require('rollup-plugin-babel')
 const commonjs = require('rollup-plugin-commonjs')
+const filesize = require('rollup-plugin-filesize')
 const resolve  = require('rollup-plugin-node-resolve')
 const uglify   = require('rollup-plugin-uglify')
 const rucksack = require('rucksack-css')
-const size = require('gulp-size')
-const filesize = require('rollup-plugin-filesize')
 
 // error handler
 
