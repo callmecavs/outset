@@ -34,16 +34,17 @@ const onError = function(error) {
   this.emit('end')
 }
 
-// clean
+// size reporting options
 
-gulp.task('clean', () => del('dist'))
-
-// sizes
 const sizes = {
-  gzip: false ,
+  gzip: false,
   pretty: true,
   showFiles: true
 }
+
+// clean
+
+gulp.task('clean', () => del('dist'))
 
 // html
 
