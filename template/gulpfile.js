@@ -116,12 +116,10 @@ const write = {
   }
 }
 
-gulp.task('js', async function () {
-  const bundle = await rollup.rollup(read);
-
-  await bundle.write(write);
-});
-
+gulp.task('js', async () => {
+  const bundle = await rollup.rollup(read)
+  await bundle.write(write)
+})
 
 // images
 
