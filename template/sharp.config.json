@@ -1,0 +1,13 @@
+{
+  "jpeg": {
+    "quality": 80,
+    "progressive": true
+  },
+  "png": {
+    "quality": 80,
+    "progressive": true
+  },
+  "webp": {
+    "quality": 80
+  }
+}

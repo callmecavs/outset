@@ -1,28 +1,37 @@
-@mixin clearfix {
-  &::before,
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+@use "sass:math";
 
-@mixin font-face($font-name, $file-name) {
+@mixin font-face($font-name, $file-name, $font-weight) {
   @font-face {
     font-family: $font-name;
-    src: url("fonts/#{$file-name}.woff2") format("woff2"),
-         url("fonts/#{$file-name}.woff") format("woff");
+    font-weight: $font-weight;
+    // src: url("../assets/fonts/#{ $file-name }.") format("");
   }
 }
 
-@mixin hide-text {
+@mixin image-replace {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
 }
 
+@mixin letter-spacing($number) {
+  letter-spacing: math.div($number, 1000) * 1em;
+}
+
+@mixin max($width) {
+  @media screen and (max-width: $width - 1) {
+    @content;
+  }
+}
+
 @mixin min($width) {
   @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin x2() {
+  @media (min-resolution: 2dppx) {
     @content;
   }
 }
