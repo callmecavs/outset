@@ -1,9 +1,14 @@
 {
   "name": "",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "author": "",
   "license": "",
+  "repository": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
   "engines": {
     "node": ">= 16"
   },
@@ -14,6 +19,7 @@
     "prod": "npm run clean && parcel build",
     "start": "npm run clean && parcel"
   },
+  "dependencies": {},
   "devDependencies": {
     "@parcel/resolver-glob": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
