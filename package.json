@@ -1,31 +1,23 @@
 {
-  "name":        "outset",
+  "name": "outset",
   "description": "A minimal frontend boilerplate, emphasizing workflow.",
-
   "version": "4.2.0",
   "license": "MIT",
-
   "repository": "callmecavs/outset",
-
   "author": {
-    "name":  "Michael Cavalea",
+    "name": "Michael Cavalea",
     "email": "callmecavs@gmail.com",
-    "url":   "http://callmecavs.com/"
+    "url": "http://callmecavs.com/"
   },
-
   "bin": {
-    "outset": "outset.js"
+    "outset": "index.mjs"
   },
-
   "keywords": [
     "boilerplate",
     "frontend",
     "minimal"
   ],
-
-  "preferGlobal": true,
-
-  "dependencies": {
-    "fs-extra": "^1.0.0"
+  "devDependencies": {
+    "fs-extra": "^10.0.1"
   }
 }
