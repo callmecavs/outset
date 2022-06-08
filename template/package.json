@@ -19,13 +19,12 @@
     "prod": "npm run clean && parcel build",
     "start": "npm run clean && parcel"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@parcel/resolver-glob": "^2.3.2",
-    "@parcel/transformer-sass": "^2.3.2",
-    "autoprefixer": "^10.4.2",
-    "parcel": "^2.3.2",
-    "posthtml-include": "^1.7.2",
-    "sharp": "^0.30.2"
+    "@parcel/resolver-glob": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.6.0",
+    "posthtml-include": "^1.7.4",
+    "sharp": "^0.30.6"
   }
 }
